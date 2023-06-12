@@ -320,7 +320,7 @@ header nav .mobile-btn a {
   margin: 0 auto;
 
   line-height: 30px;
-  font-size: 15px;
+  font-size: 12px;
 }
 .info-container .info-wrap .info-sns {
   font-size: 17px;
@@ -333,6 +333,7 @@ header nav .mobile-btn a {
 .info-container .info-wrap .info-copy {
   padding: 15px 0;
   letter-spacing: 1px;
+  font-size: 11px;
 }
 .info-container .info-wrap .info-copy div {
   margin-right: 10px;
