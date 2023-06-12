@@ -1,0 +1,68 @@
+@charset 'utf-8';
+
+/* -- box-txt -- */
+.main-container .main-box .box-txt p {
+  display: block;
+}
+/* -- sns & arrow list -- */
+.main-container .main-sns ul svg {
+  display: block;
+  height: 20px;
+}
+.main-container .main-box .box-txt p {
+  word-wrap: normal;
+  word-break: keep-all;
+}
+.main-container .main-arrow {
+  display: inline-block;
+  gap: 1px;
+  justify-content: center;
+}
+.main-container .main-img {
+  position: relative;
+}
+.main-container .main-arrow {
+  position: absolute;
+  display: inline-block;
+  right: 10%;
+  top: 400px;
+  z-index: 99999;
+}
+.main-container .main-arrow .left-btn,
+.right-btn {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: #666666;
+
+  position: relative;
+}
+.main-container .main-arrow .left-btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -14px;
+  margin-top: -9px;
+  border-top: #fff solid 2px;
+  border-right: #fff solid 2px;
+  transform: rotate(225deg);
+}
+
+.main-container .main-arrow .right-btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -14px;
+  margin-top: -9px;
+  border-top: #fff solid 2px;
+  border-right: #fff solid 2px;
+  transform: rotate(45deg);
+}

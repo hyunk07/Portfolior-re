@@ -1,0 +1,350 @@
+@charset 'utf-8';
+
+body {
+  background-color: #fdfbf4;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Malgun Gothic",
+    "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+.flex {
+  display: flex;
+}
+span {
+  display: block;
+}
+strong {
+  font-weight: 700;
+}
+/* 스크롤바 */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff7d9;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b3ac9b;
+  border-radius: 5px;
+}
+
+/* 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------ */
+.upbtn {
+  width: 38px;
+  height: 38px;
+  right: 7.5%;
+  bottom: 7.5vw;
+  background-color: #131313;
+  z-index: 99;
+  position: fixed;
+}
+.upbtn a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  margin-left: -7px;
+  margin-top: -3px;
+  border-top: #fff solid 1px;
+  border-right: #fff solid 1px;
+  transform: rotate(-45deg);
+}
+/* more-btn */
+
+.more-btn a {
+  color: #3f303d;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  min-width: 140px;
+  height: 45px;
+  padding: 0 60px 0 20px;
+  line-height: 45px;
+  background-color: #c7aa90;
+  vertical-align: middle;
+  position: relative;
+}
+.more-btn a:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 3px;
+  background-color: #3f303d;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+}
+/* ***header*** */
+header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999999999;
+}
+header .header-wrapper {
+  width: 85%;
+  height: 60px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  width: 175px;
+}
+header a {
+  display: block;
+}
+header a img {
+  width: 100%;
+}
+header nav .nav-bar {
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding: 2% 3%;
+}
+header nav .nav-bar a {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px 5px 10px;
+}
+header nav .nav-bar li:last-child a {
+  border-bottom: none;
+}
+/* -----mobile-btn----- */
+header nav .mobile-btn a {
+  display: block;
+  width: 30px;
+}
+/* -----------main----------- */
+/* -- container -- */
+.main-container {
+  width: 100%;
+}
+.main-container .main-box {
+  width: 85%;
+  margin: 20% auto 5%;
+  gap: 20px;
+}
+.main-container .main-box .num-btn li {
+  margin-left: 20px;
+  position: relative;
+  font-size: 18px;
+}
+.main-container .main-box .num-btn li a::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 3px;
+  background-color: #7e7e7e;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+}
+.main-container .main-box .box-txt {
+  font-family: "Pretendard Variable", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  letter-spacing: -1px;
+  /* margin: 20% 0 5% 20.6%; */
+}
+.main-container .main-box .box-txt h2 {
+  margin-bottom: 5px;
+  font-size: 22px;
+  line-height: 34px;
+}
+.main-container .main-box .box-txt h3 {
+  font-weight: 700;
+}
+/* -- box-txt -- */
+.main-container .main-box .box-txt p {
+  display: none;
+}
+.main-container .main-img {
+  width: 85%;
+  margin: 0 auto;
+}
+/* -- sns & arrow list -- */
+.main-container .main-sns ul {
+  width: 7.5%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.main-container .main-sns ul svg {
+  display: none;
+  height: 20px;
+}
+.main-container .main-arrow {
+  display: none;
+}
+
+/* -- about-container -- */
+.about-container {
+  padding-top: 100px;
+}
+.about-container .about-wrap {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+.about-container .about-wrap .commonness-txt {
+  overflow: hidden;
+  word-break: keep-all;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+.commonness-txt {
+  font-size: 14px;
+}
+.commonness-txt h2 {
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+.commonness-txt h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.commonness-txt p {
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.about-container .about-wrap .about-img {
+  padding-top: 150px;
+  text-align: center;
+}
+.about-container .about-wrap .about-img img {
+  max-width: 350px;
+  aspect-ratio: 1;
+}
+.about-container .about-wrap .more-btn {
+  position: absolute;
+  top: 240px;
+}
+
+/* -- ani-container -- */
+.ani-container {
+  margin-top: 100px;
+  color: #131313;
+  font-size: 130px;
+  font-weight: 700;
+  overflow: hidden;
+  word-break: keep-all;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+.ani-container h2 {
+  color: transparent;
+  -webkit-text-stroke: 1px #131313;
+}
+
+/* -- store-container -- */
+.store-container .store-wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.store-container .store-imgbox {
+  background: url(./images/namsan.jpg) no-repeat 50% / cover;
+  height: 847px;
+  position: relative;
+}
+
+.store-container .store-imgbox .store-info {
+  width: 85%;
+  margin: 0 7.5%;
+  color: #fff;
+  position: absolute;
+  bottom: 70px;
+}
+.store-container .store-wrap .commonness-txt {
+  padding: 10px 0;
+}
+.store-container .store-wrap .store-text {
+  padding: 10px 0;
+}
+.store-container .store-imgbox .more-btn a {
+  color: #b18468;
+  background-color: #fff;
+}
+.store-container .store-imgbox .more-btn a::before {
+  background-color: #b18468;
+}
+.store-container .store-imgbox .more-btn {
+  margin-top: 20px;
+}
+/* -- map-container -- */
+.map-container .map-wrap {
+  padding: 100px 0;
+  width: 85%;
+  margin: 0 auto;
+}
+.map-container .map-wrap .more-btn {
+  margin-top: 40px;
+}
+.map-container .map-wrap .commonness-txt h3 {
+  margin-bottom: 60px;
+}
+.map-container .map-wrap .commonness-txt .kakao-map {
+  border: #fff 1px solid;
+  width: 100%;
+  aspect-ratio: 4/3;
+
+  margin-bottom: 45px;
+  z-index: 9999999;
+}
+/* -- info-container -- */
+.footer {
+  min-width: 320px;
+}
+.info-container {
+  background-color: #f1efee;
+  width: 100%;
+}
+.info-container .info-wrap {
+  padding: 60px 0;
+  flex-direction: column;
+
+  width: 83.3333%;
+  margin: 0 auto;
+
+  line-height: 30px;
+  font-size: 15px;
+}
+.info-container .info-wrap .info-sns {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.info-container .info-wrap .info-sns div {
+  margin-right: 10px;
+}
+.info-container .info-wrap .info-copy {
+  padding: 15px 0;
+  letter-spacing: 1px;
+}
+.info-container .info-wrap .info-copy div {
+  margin-right: 10px;
+}
+.info-container .info-wrap .info-tel {
+  font-size: 15px;
+}
+.info-container .info-wrap .info-tel strong {
+  width: 80px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.info-container .info-wrap .info-me {
+  padding-left: 95px;
+}
