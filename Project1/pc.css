@@ -1,1 +1,61 @@
 @charset 'utf-8';
+
+.upbtn {
+  width: 60px;
+  height: 60px;
+}
+.upbtn a {
+  width:17px;
+    height:17px;
+    margin-left: -9px;
+    margin-top: -5px;
+}
+.commonness-txt p{
+  font-size: 17px;
+}
+.commonness-txt h2 {
+    font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.commonness-txt h3 {
+  font-size: 50px;
+      line-height: 60px;
+}
+/* ***header*** */ 
+header .header-wrapper {
+  width: 85%;
+  height: 80px;
+}
+
+header h1 {
+  width: 100px;
+  height: 80px;
+}
+
+header h1 a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+header nav .mobile-btn {
+  display: none;
+}
+
+header nav .nav-bar {
+  display: flex;
+  position: static;
+  padding: 0;
+}
+
+header nav .nav-bar a {
+  border: none;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  padding: 0 20px;
+}
+
+header nav .nav-bar a:hover {
+}

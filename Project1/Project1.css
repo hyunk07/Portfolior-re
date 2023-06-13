@@ -14,6 +14,8 @@ span {
 strong {
   font-weight: 700;
 }
+
+
 /* 스크롤바 */
 ::-webkit-scrollbar {
   width: 7px;
@@ -30,8 +32,9 @@ strong {
 html {
   scroll-behavior: smooth;
 }
+/* -------변경xxxx------- */
 
-/* ------ */
+
 .upbtn {
   width: 38px;
   height: 38px;
@@ -78,7 +81,29 @@ html {
   right: 25px;
   top: 50%;
 }
-/* ***header*** */
+/* -------commonnes------- */
+.commonness-txt {
+  font-size: 14px;
+}
+.commonness-txt h2 {
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+.commonness-txt h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.commonness-txt p {
+  padding: 10px 0;
+  font-weight: 400;
+}
+.wrap85{
+  width: 90%;
+}
+/* ***header*** */ 
 header {
   background-color: #fff;
   position: sticky;
@@ -86,7 +111,6 @@ header {
   z-index: 999999999;
 }
 header .header-wrapper {
-  width: 85%;
   height: 60px;
   margin: 0 auto;
   justify-content: space-between;
@@ -129,7 +153,6 @@ header nav .mobile-btn a {
   width: 100%;
 }
 .main-container .main-box {
-  width: 85%;
   margin: 20% auto 5%;
   gap: 20px;
 }
@@ -152,9 +175,9 @@ header nav .mobile-btn a {
   font-family: "Pretendard Variable", -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   letter-spacing: -1px;
-  /* margin: 20% 0 5% 20.6%; */
 }
 .main-container .main-box .box-txt h2 {
+  font-weight: 300;
   margin-bottom: 5px;
   font-size: 22px;
   line-height: 34px;
@@ -167,7 +190,6 @@ header nav .mobile-btn a {
   display: none;
 }
 .main-container .main-img {
-  width: 85%;
   margin: 0 auto;
 }
 /* -- sns & arrow list -- */
@@ -191,7 +213,6 @@ header nav .mobile-btn a {
 }
 .about-container .about-wrap {
   flex-direction: column;
-  width: 85%;
   margin: 0 auto;
   position: relative;
 }
@@ -202,32 +223,11 @@ header nav .mobile-btn a {
   white-space: nowrap;
 }
 .about-container .about-wrap .commonness-txt h3 {
-  font-size: 28px;
+  font-size: 27px;
 }
 .about-container .about-wrap .commonness-txt p {
   font-size: 12.5px;
 }
-/* -------------- */
-.commonness-txt {
-  font-size: 14px;
-}
-.commonness-txt h2 {
-  font-weight: 700;
-  letter-spacing: 4px;
-  line-height: 25px;
-  margin-bottom: 5px;
-}
-.commonness-txt h3 {
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 700;
-}
-.commonness-txt p {
-  padding: 10px 0;
-  font-weight: 400;
-  /* font-size: 14px; */
-}
-
 .about-container .about-wrap .about-img {
   padding-top: 150px;
   text-align: center;
@@ -251,15 +251,25 @@ header nav .mobile-btn a {
   word-break: keep-all;
   word-wrap: break-word;
   white-space: nowrap;
+  
+}
+.ani-container h1{
+  animation: move 5s infinite linear ;
 }
 .ani-container h2 {
   color: transparent;
   -webkit-text-stroke: 1px rgba(19, 19, 19, 0.2);
+
+  animation: move 5s infinite linear ;
+}
+
+@keyframes move {
+  0% {left: -10%; }
+  100% {left: 110%; }
 }
 
 /* -- store-container -- */
 .store-container .store-wrap {
-  width: 85%;
   margin: 0 auto;
 }
 
@@ -270,8 +280,7 @@ header nav .mobile-btn a {
 }
 
 .store-container .store-imgbox .store-info {
-  width: 85%;
-  margin: 0 7.5%;
+  margin: 0 5%;
   color: #fff;
   position: absolute;
   bottom: 70px;
@@ -301,7 +310,6 @@ header nav .mobile-btn a {
 /* -- map-container -- */
 .map-container .map-wrap {
   padding: 100px 0;
-  width: 85%;
   margin: 0 auto;
 }
 .map-container .map-wrap .more-btn {
@@ -353,18 +361,12 @@ header nav .mobile-btn a {
 .info-container .info-wrap .info-copy div {
   margin-right: 10px;
 }
-.info-container .info-wrap .info-tel {
-  font-size: 12px;
-}
 .info-container .info-wrap .info-tel strong {
   width: 80px;
   margin-right: 10px;
   display: inline-block;
 }
-.info-container .info-wrap .info-tel span {
-  display: inline;
-  width: calc(100% - 75px);
-}
+
 .info-container .info-wrap .info-me {
   padding-left: 95px;
 }
