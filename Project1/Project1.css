@@ -64,7 +64,7 @@ html {
   height: 45px;
   padding: 0 60px 0 20px;
   line-height: 45px;
-  background-color: #c7aa90;
+  background-color: #c7aa85;
   vertical-align: middle;
   position: relative;
 }
@@ -129,7 +129,7 @@ header nav .mobile-btn a {
   width: 100%;
 }
 .main-container .main-box {
-  width: 90%;
+  width: 85%;
   margin: 20% auto 5%;
   gap: 20px;
 }
@@ -167,7 +167,7 @@ header nav .mobile-btn a {
   display: none;
 }
 .main-container .main-img {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 /* -- sns & arrow list -- */
@@ -191,7 +191,7 @@ header nav .mobile-btn a {
 }
 .about-container .about-wrap {
   flex-direction: column;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   position: relative;
 }
@@ -259,7 +259,7 @@ header nav .mobile-btn a {
 
 /* -- store-container -- */
 .store-container .store-wrap {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -270,7 +270,7 @@ header nav .mobile-btn a {
 }
 
 .store-container .store-imgbox .store-info {
-  width: 90%;
+  width: 85%;
   margin: 0 7.5%;
   color: #fff;
   position: absolute;
