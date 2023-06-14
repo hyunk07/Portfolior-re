@@ -2,18 +2,17 @@
 
 /* -------변경xxxx------- */
 
-
 .upbtn {
   width: 50px;
   height: 50px;
   right: 4.16vw;
-    bottom: 4.16vw;;
+  bottom: 4.16vw;
 }
 .upbtn a {
   width: 15px;
-    height: 15px;
-    margin-left: -8px;
-    margin-top: -3px;
+  height: 15px;
+  margin-left: -8px;
+  margin-top: -3px;
 }
 /* more-btn */
 
@@ -40,33 +39,33 @@
   font-size: 40px;
   line-height: 45px;
 }
-.wrap85{
+.wrap85 {
   width: 85%;
 }
-
-
 
 /* -- maincontainer -- */
 .main-container .main-box {
   margin: 130px auto 50px;
 }
-.main-container .main-box .box-txt{
+.main-container .main-box .box-txt {
   margin-left: 50px;
 }
-.main-container .main-box .box-txt h2{
+.main-container .main-box .box-txt h2 {
   margin-bottom: 30px;
 }
-.main-container .main-box .box-txt h3 {margin-bottom: 20px;}
+.main-container .main-box .box-txt h3 {
+  margin-bottom: 20px;
+}
 .main-container .main-box .box-txt p {
   display: block;
 }
 .main-container .main-box .num-btn li {
-  margin-left: 35px;}
+  margin-left: 35px;
+}
 .main-container .main-box .num-btn li a::before {
   width: 15px;
   left: -35px;
 }
-
 
 /* ------ new ------ */
 .main-container .main-arrow {
@@ -81,7 +80,7 @@
   position: absolute;
   display: inline-block;
   right: 15%;
-  top: 520px;
+  top: 540px;
   z-index: 99999;
 }
 .main-container .main-arrow .left-btn,
@@ -185,7 +184,7 @@ p {
   margin-top: 270px;
   position: relative;
 }
-.store-container .store-imgbox .store-info .commonness-txt h3{
+.store-container .store-imgbox .store-info .commonness-txt h3 {
   margin-bottom: 25px;
 }
 .store-container .store-imgbox .store-info .commonness-txt p {
@@ -229,27 +228,28 @@ p {
 
 /* -- map-container -- */
 
-.map-container .map-wrap.commonness-txt p span{
+.map-container .map-wrap.commonness-txt p span {
   margin: 20px 0;
   display: block;
 }
-.map-container .map-wrap .commonness-txt{
+.map-container .map-wrap .commonness-txt {
   position: relative;
 }
 .map-container .map-wrap .commonness-txt .kakao-map {
   width: 50%;
   position: absolute;
-  top: 0;right: 0;
+  top: 0;
+  right: 0;
 }
 
 /* -- info-container -- */
-.info-container .info-wrap{
+.info-container .info-wrap {
   font-size: 15px;
 }
-.info-container .info-wrap .info-sns{
+.info-container .info-wrap .info-sns {
   font-size: 17px;
 }
-.info-container .info-wrap .info-copy{
+.info-container .info-wrap .info-copy {
   font-size: 15px;
 }
 .info-container .info-wrap .info-tel strong {

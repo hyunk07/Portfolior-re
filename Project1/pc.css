@@ -136,3 +136,26 @@ p {
 .ani {
   margin-top: 180px;
 }
+
+/* -- info-container -- */
+.info-container .info-wrap {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.info-container .info-wrap div div {
+  height: 40px;
+}
+.info-container .info-wrap menu li {
+  height: 40px;
+}
+.info-container .info-wrap .info-sns {
+  flex-direction: column;
+  font-size: 20px;
+}
+.info-container .info-wrap .info-copy {
+  flex-direction: column;
+  padding: 0;
+}
+.info-container .info-wrap .info-me {
+  padding-left: 0;
+}
