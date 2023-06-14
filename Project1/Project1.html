@@ -42,6 +42,8 @@
    <!-- kakao-map -->
    <script type="text/javascript"
       src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=31dbad97ee85ffcde0d5d78f11eb716b"></script>
+   <!-- jQuery -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
 
 </head>
 
@@ -122,7 +124,7 @@
                </li>
             </ul>
          </div>
-         <a href="#">
+         <a href="#about">
             <div class="main-down">
                <i></i>
             </div>
@@ -138,7 +140,7 @@
       </div>
    </section>
    <!-- about-container -->
-   <section>
+   <section id="about">
       <div class="about-container">
          <div class="about-wrap wrap85">
             <div class="commonness-txt">
@@ -234,7 +236,7 @@
                </p>
             </div>
 
-            <div class="more-btn"><a href="#">KAKAO MAP</a></div>
+            <div class="more-btn"><a href="http://kko.to/EvUgv6RH4a" target='_blank'>KAKAO MAP</a></div>
          </div>
       </div>
 
@@ -267,11 +269,11 @@
          </div>
       </div>
    </footer>
-   <div class="upbtn">
-      <a href="#"></a>
+   <a href="Project1.html" class="upbtn"><i></i></a>
    </div>
 
    <script>
+      $('a[href="#"]').on('click', (e) => e.preventDefault())
       var mapContainer = document.getElementById('kakao-map'), // 지도를 표시할 div 
          mapOption = {
             center: new kakao.maps.LatLng(37.576062, 126.973562), // 지도의 중심좌표

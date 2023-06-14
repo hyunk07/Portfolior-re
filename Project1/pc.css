@@ -4,7 +4,7 @@
   width: 60px;
   height: 60px;
 }
-.upbtn a {
+.upbtn i {
   width: 17px;
   height: 17px;
   margin-left: -9px;
@@ -96,9 +96,11 @@ p {
   fill: #131313;
 }
 .main-container .main-down {
+  width: 30px;
+  height: 65px;
   position: absolute;
-  bottom: 50px;
-  right: 4.16vw;
+  bottom: 90px;
+  right: 1.5vw;
 }
 .main-container .main-down::before {
   content: "";

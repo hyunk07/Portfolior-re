@@ -42,7 +42,7 @@ html {
   position: fixed;
   z-index: 99;
 }
-.upbtn a {
+.upbtn i {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -387,7 +387,7 @@ header nav .mobile-btn a {
 }
 .info-container .info-wrap .info-tel li span {
   display: inline-block;
-  width: 70%;
+  width: 80%;
 }
 
 .info-container .info-wrap .info-me {
