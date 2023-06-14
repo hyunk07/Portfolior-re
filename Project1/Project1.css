@@ -15,7 +15,6 @@ strong {
   font-weight: 700;
 }
 
-
 /* 스크롤바 */
 ::-webkit-scrollbar {
   width: 7px;
@@ -33,7 +32,6 @@ html {
   scroll-behavior: smooth;
 }
 /* -------변경xxxx------- */
-
 
 .upbtn {
   width: 38px;
@@ -100,10 +98,10 @@ html {
   padding: 10px 0;
   font-weight: 400;
 }
-.wrap85{
+.wrap85 {
   width: 90%;
 }
-/* ***header*** */ 
+/* ***header*** */
 header {
   background-color: #fff;
   position: sticky;
@@ -138,9 +136,6 @@ header nav .nav-bar a {
   font-weight: 700;
   text-transform: uppercase;
   padding: 14px 5px 10px;
-}
-header nav .nav-bar li:last-child a {
-  border-bottom: none;
 }
 /* -----mobile-btn----- */
 header nav .mobile-btn a {
@@ -251,21 +246,32 @@ header nav .mobile-btn a {
   word-break: keep-all;
   word-wrap: break-word;
   white-space: nowrap;
-  
 }
-.ani-container h1{
-  animation: move 5s infinite linear ;
+.ani-container h1 {
+  animation: move1 10s infinite linear;
 }
 .ani-container h2 {
   color: transparent;
   -webkit-text-stroke: 1px rgba(19, 19, 19, 0.2);
 
-  animation: move 5s infinite linear ;
+  animation: move 10s infinite linear;
 }
 
+@keyframes move1 {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
 @keyframes move {
-  0% {left: -10%; }
-  100% {left: 110%; }
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
 }
 
 /* -- store-container -- */

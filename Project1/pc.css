@@ -5,27 +5,28 @@
   height: 60px;
 }
 .upbtn a {
-  width:17px;
-    height:17px;
-    margin-left: -9px;
-    margin-top: -5px;
+  width: 17px;
+  height: 17px;
+  margin-left: -9px;
+  margin-top: -5px;
 }
-.commonness-txt p{
+.commonness-txt p {
   font-size: 17px;
 }
 .commonness-txt h2 {
-    font-size: 16px;
+  font-size: 16px;
   line-height: 25px;
   margin-bottom: 20px;
 }
 .commonness-txt h3 {
   font-size: 50px;
-      line-height: 60px;
+  line-height: 60px;
 }
-/* ***header*** */ 
+/* ***header*** */
 header .header-wrapper {
   width: 85%;
   height: 80px;
+  font-size: 18px;
 }
 
 header h1 {
@@ -39,8 +40,10 @@ header h1 a {
   align-items: center;
 }
 
-header nav .mobile-btn {
-  display: none;
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav .nav-bar {
@@ -56,6 +59,80 @@ header nav .nav-bar a {
   place-items: center;
   padding: 0 20px;
 }
+header nav .mobile-btn svg {
+  height: 25px;
+}
+header nav .mobile-btn {
+  height: 25px;
+  padding-left: 20px;
+}
+/* -----------main----------- */
+.main-container .main-box .box-txt {
+  z-index: 9999999999999999;
+}
+.main-container .main-box .box-txt h2 {
+  font-size: 80px;
+  font-weight: 200;
+  line-height: 100px;
+}
+.main-container .main-box .box-txt h3,
+p {
+  font-size: 17px;
+  line-height: 30px;
+}
+.main-container .main-sns ul {
+  align-items: center;
+  gap: 15px;
+  position: fixed;
+  bottom: 50px;
+  z-index: 999999999;
+}
+.main-container .main-sns ul svg {
+  display: block;
+  height: 27px;
+  fill: #131313;
+}
+.main-container .main-down {
+  position: absolute;
+  bottom: 50px;
+  right: 4.16vw;
+}
+.main-container .main-down::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 1px;
+  height: 40px;
+  background-color: #131313;
+}
+.main-container .main-down::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 13px;
+  width: 15px;
+  height: 15px;
+  border-right: #131313 solid 1px;
+  transform: rotate(135deg);
+}
+.main-container .main-arrow {
+  top: 490px;
+}
 
-header nav .nav-bar a:hover {
+.main-container .main-img img {
+  transform: translateY(-170px);
+}
+
+/* -- about-container -- */
+.about-container .about-wrap .commonness-txt h3 {
+  font-size: 45px;
+  margin-bottom: 60px;
+}
+.about-container .about-wrap .commonness-txt p {
+  font-size: 17px;
+}
+/* ***ani-container*** */
+.ani {
+  margin-top: 180px;
 }
