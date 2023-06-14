@@ -80,6 +80,9 @@ p {
   font-size: 17px;
   line-height: 30px;
 }
+.main-container .main-box .box-txt p span {
+  display: block;
+}
 .main-container .main-sns ul {
   align-items: center;
   gap: 15px;
@@ -117,11 +120,11 @@ p {
   transform: rotate(135deg);
 }
 .main-container .main-arrow {
-  top: 490px;
+  top: 425px;
 }
 
 .main-container .main-img img {
-  transform: translateY(-170px);
+  transform: translateY(-270px);
 }
 
 /* -- about-container -- */
@@ -136,7 +139,13 @@ p {
 .ani {
   margin-top: 180px;
 }
-
+/* -- map-container -- */
+.map-container .map-wrap {
+  padding: 130px 0;
+}
+.map-container .map-wrap .commonness-txt .kakao-map {
+  overflow: hidden;
+}
 /* -- info-container -- */
 .info-container .info-wrap {
   flex-direction: row;

@@ -58,7 +58,9 @@
 }
 .main-container .main-box .box-txt p {
   display: block;
+  margin-right: 14vw;
 }
+
 .main-container .main-box .num-btn li {
   margin-left: 35px;
 }

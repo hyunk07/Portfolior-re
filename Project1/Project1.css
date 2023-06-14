@@ -184,6 +184,9 @@ header nav .mobile-btn a {
 .main-container .main-box .box-txt p {
   display: none;
 }
+.main-container .main-box .box-txt p span {
+  display: inline;
+}
 .main-container .main-img {
   margin: 0 auto;
 }
@@ -361,16 +364,26 @@ header nav .mobile-btn a {
 }
 .info-container .info-wrap .info-copy {
   padding: 15px 0;
-  letter-spacing: 1px;
   font-size: 11px;
 }
 .info-container .info-wrap .info-copy div {
   margin-right: 10px;
 }
+.info-container .info-wrap .info-copy div:last-child {
+  margin-right: 0;
+}
 .info-container .info-wrap .info-tel strong {
   width: 80px;
   margin-right: 10px;
   display: inline-block;
+}
+.info-container .info-wrap .info-tel li strong {
+  display: inline-block;
+  width: 30%;
+}
+.info-container .info-wrap .info-tel li span {
+  display: inline-block;
+  width: 70%;
 }
 
 .info-container .info-wrap .info-me {
