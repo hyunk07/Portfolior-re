@@ -40,7 +40,7 @@ html {
   bottom: 7.5vw;
   background-color: #131313;
   position: fixed;
-  z-index: 999999999;
+  z-index: 99;
 }
 .upbtn a {
   position: absolute;
@@ -106,7 +106,7 @@ header {
   background-color: #fff;
   position: sticky;
   top: 0;
-  z-index: 999999999;
+  z-index: 999999;
 }
 header .header-wrapper {
   height: 60px;

@@ -68,7 +68,7 @@ header nav .mobile-btn {
 }
 /* -----------main----------- */
 .main-container .main-box .box-txt {
-  z-index: 9999999999999999;
+  z-index: 9999;
 }
 .main-container .main-box .box-txt h2 {
   font-size: 80px;
@@ -88,7 +88,7 @@ p {
   gap: 15px;
   position: fixed;
   bottom: 50px;
-  z-index: 999999999;
+  z-index: 99;
 }
 .main-container .main-sns ul svg {
   display: block;
