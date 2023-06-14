@@ -374,12 +374,16 @@ header nav .mobile-btn a {
 }
 .info-container .info-wrap .info-tel strong {
   width: 80px;
+  margin: 10px;
   margin-right: 10px;
   display: inline-block;
 }
-.info-container .info-wrap .info-tel li strong {
+/* .info-container .info-wrap .info-tel li strong {
   display: inline-block;
   width: 30%;
+} */
+.info-container .info-wrap .info-tel li {
+  align-items: baseline;
 }
 .info-container .info-wrap .info-tel li span {
   display: inline-block;
