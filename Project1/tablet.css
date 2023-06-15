@@ -85,6 +85,7 @@
   top: 540px;
   z-index: 99999;
 }
+
 .main-container .main-arrow .left-btn,
 .right-btn {
   display: inline-block;
@@ -102,8 +103,8 @@
   top: 50%;
   width: 24px;
   height: 24px;
-  margin-left: -14px;
-  margin-top: -9px;
+  margin-left: -5px;
+  margin-top: -12px;
   border-top: #fff solid 2px;
   border-right: #fff solid 2px;
   transform: rotate(225deg);
@@ -117,11 +118,19 @@
   top: 50%;
   width: 24px;
   height: 24px;
-  margin-left: -14px;
-  margin-top: -9px;
+  margin-left: -20px;
+  margin-top: -12px;
   border-top: #fff solid 2px;
   border-right: #fff solid 2px;
   transform: rotate(45deg);
+}
+.main-container .main-arrow .left-btn:hover::after {
+  border-top: rgba(255, 255, 255, 0.5) solid 2px;
+  border-right: rgba(255, 255, 255, 0.5) solid 2px;
+}
+.main-container .main-arrow .right-btn:hover::after {
+  border-top: rgba(255, 255, 255, 0.5) solid 2px;
+  border-right: rgba(255, 255, 255, 0.5) solid 2px;
 }
 /* -- container -- */
 
@@ -148,6 +157,10 @@ p {
 }
 .about-container .about-wrap .commonness-txt h3 {
   font-size: 33px;
+  margin-bottom: 40px;
+}
+.about-container .about-wrap .commonness-txt p {
+  font-size: 15px;
 }
 .about-container .about-wrap .about-img {
   padding: 0;
@@ -186,6 +199,7 @@ p {
   margin-top: 270px;
   position: relative;
 }
+
 .store-container .store-imgbox .store-info .commonness-txt h3 {
   margin-bottom: 25px;
 }
@@ -196,10 +210,10 @@ p {
   display: block;
 }
 .store-container .store-imgbox .store-info {
+  margin: 0 7.5%;
   position: absolute;
   top: 40%;
   display: inline-block;
-  float: left;
 }
 .store-container .store-list {
   display: block;

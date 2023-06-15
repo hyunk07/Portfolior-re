@@ -33,7 +33,6 @@ header h1 {
   width: 100px;
   height: 80px;
 }
-
 header h1 a {
   display: flex;
   height: 100%;
@@ -51,15 +50,20 @@ header nav .nav-bar {
   position: static;
   padding: 0;
 }
-header nav .nav-bar li:hover a::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: #131313;
+header nav .nav-bar li {
   position: relative;
-  bottom: 0;
 }
+
+header nav .nav-bar li:hover a::after {
+  content: "";
+  width: 90%;
+  height: 3px;
+  display: block;
+  background-color: #131313;
+  position: absolute;
+  top: 60px;
+}
+
 header nav .nav-bar a {
   border: none;
   height: 80px;
@@ -91,18 +95,66 @@ p {
 .main-container .main-box .box-txt p span {
   display: block;
 }
+
+/* --------sprite --------*/
 .main-container .main-sns ul {
   align-items: center;
-  gap: 15px;
   position: fixed;
   bottom: 50px;
   z-index: 99;
 }
-.main-container .main-sns ul svg {
-  display: block;
-  height: 27px;
-  fill: #131313;
+.main-container .main-sns li {
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
 }
+.main-container .main-sns li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999pc;
+}
+.main-container .main-sns li .facebook {
+  background: url(./images/icon_sns.svg) no-repeat;
+  background-position: left top;
+}
+.main-container .main-sns li .instagram {
+  background: url(./images/icon_sns.svg) no-repeat;
+  background-position: left 50%;
+}
+.main-container .main-sns li .youtube {
+  background: url(./images/icon_sns.svg) no-repeat;
+  background-position: left bottom;
+}
+.main-container .main-sns li i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #131313;
+  overflow: hidden;
+  position: absolute;
+  left: -999px;
+}
+.main-container .main-sns li:hover i {
+  left: 0;
+  top: 0;
+  z-index: -9;
+
+  transition-duration: 0.2s;
+}
+.main-container .main-sns li:hover .facebook {
+  background-position: right top;
+}
+.main-container .main-sns li:hover .instagram {
+  background-position: right 50%;
+}
+.main-container .main-sns li:hover .youtube {
+  background-position: right bottom;
+}
+/* --------------------- */
+
 .main-container .main-down {
   width: 30px;
   height: 65px;

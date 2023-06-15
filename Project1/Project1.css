@@ -66,6 +66,7 @@ html {
   padding: 0 60px 0 20px;
   line-height: 45px;
   background-color: #c7aa85;
+  border: 2px solid #c7aa85;
   vertical-align: middle;
   position: relative;
 }
@@ -78,6 +79,14 @@ html {
   position: absolute;
   right: 25px;
   top: 50%;
+}
+.more-btn a:hover {
+  color: #c7aa85;
+  background-color: transparent;
+  border: 2px solid #c7aa85;
+}
+.more-btn a:hover::before {
+  background-color: #c7aa85;
 }
 /* -------commonnes------- */
 .commonness-txt {
@@ -309,9 +318,18 @@ header nav .mobile-btn a {
 .store-container .store-imgbox .more-btn a {
   color: #b18468;
   background-color: #fff;
+  border: 2px solid #fff;
 }
 .store-container .store-imgbox .more-btn a::before {
   background-color: #b18468;
+}
+.store-container .store-imgbox .more-btn a:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.store-container .store-imgbox .more-btn a:hover::before {
+  background-color: #fff;
 }
 .store-container .store-imgbox .more-btn {
   margin-top: 20px;
