@@ -98,9 +98,10 @@ p {
 
 /* --------sprite --------*/
 .main-container .main-sns ul {
-  align-items: center;
+  display: block;
   position: fixed;
   bottom: 50px;
+  left: 3%;
   z-index: 99;
 }
 .main-container .main-sns li {
@@ -135,9 +136,11 @@ p {
   background-color: #131313;
   overflow: hidden;
   position: absolute;
-  left: -999px;
+  left: 15px;
+  opacity: 0;
 }
 .main-container .main-sns li:hover i {
+  opacity: 1;
   left: 0;
   top: 0;
   z-index: -9;
