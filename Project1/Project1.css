@@ -201,14 +201,11 @@ header nav .mobile-btn a {
 }
 /* -- sns & arrow list -- */
 .main-container .main-sns ul {
+  display: none;
   width: 7.5%;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-}
-.main-container .main-sns ul svg {
-  display: none;
-  height: 20px;
 }
 .main-container .main-arrow {
   display: none;
