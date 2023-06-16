@@ -404,3 +404,14 @@ header nav .mobile-btn a {
 .info-container .info-wrap .info-me {
   padding-left: 95px;
 }
+.info-container .info-wrap .info-me a {
+  border: 1px solid #131313;
+  font-weight: 700;
+  padding: 5px 7px;
+}
+.info-container .info-wrap .info-me:hover a {
+  background-color: #131313;
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.8s;
+}
