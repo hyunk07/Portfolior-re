@@ -137,6 +137,7 @@ p {
   overflow: hidden;
   position: absolute;
   left: 15px;
+  text-indent: -99999px;
   opacity: 0;
 }
 .main-container .main-sns li a:hover i {
@@ -147,13 +148,13 @@ p {
 
   transition-duration: 0.2s;
 }
-.main-container .main-sns li:hover .facebook {
+.main-container .main-sns li a:hover .facebook {
   background-position: right top;
 }
-.main-container .main-sns li:hover .instagram {
+.main-container .main-sns li a:hover .instagram {
   background-position: right 50%;
 }
-.main-container .main-sns li:hover .youtube {
+.main-container .main-sns li a:hover .youtube {
   background-position: right bottom;
 }
 /* --------------------- */
