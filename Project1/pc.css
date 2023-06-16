@@ -139,7 +139,7 @@ p {
   left: 15px;
   opacity: 0;
 }
-.main-container .main-sns li:hover i {
+.main-container .main-sns li a:hover i {
   opacity: 1;
   left: 0;
   top: 0;
