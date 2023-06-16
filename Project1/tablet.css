@@ -76,6 +76,7 @@
   justify-content: center;
 }
 .main-container .main-img {
+  max-height: 600px;
   position: relative;
 }
 .main-container .main-arrow {
@@ -196,6 +197,7 @@ p {
 }
 
 .store-container .store-imgbox {
+  max-height: 837px;
   margin-top: 270px;
   position: relative;
 }

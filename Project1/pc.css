@@ -188,8 +188,9 @@ p {
   top: 425px;
 }
 
-.main-container .main-img img {
+.main-container .main-img {
   transform: translateY(-270px);
+  transition: 0.1s;
 }
 
 /* -- about-container -- */
