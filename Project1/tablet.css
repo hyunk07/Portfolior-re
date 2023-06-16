@@ -256,8 +256,10 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-}
+  border: #666666 2px solid;
 
+  max-height: 465px;
+}
 /* -- info-container -- */
 .info-container .info-wrap {
   font-size: 15px;

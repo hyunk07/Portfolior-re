@@ -205,9 +205,7 @@ p {
 .map-container .map-wrap {
   padding: 130px 0;
 }
-.map-container .map-wrap .commonness-txt .kakao-map {
-  overflow: hidden;
-}
+
 /* -- info-container -- */
 .info-container .info-wrap {
   flex-direction: row;
