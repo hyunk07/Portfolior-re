@@ -315,6 +315,35 @@ section:first-child {
 .store-container .store-list {
   display: none;
 }
+.store-container .store-none {
+  width: 40%;
+  /* display: none; */
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  margin: 0 30%;
+
+  position: absolute;
+  bottom: 35px;
+  z-index: 9;
+}
+.store-container .store-none li {
+  display: block;
+  position: relative;
+}
+.store-container .store-none li::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  opacity: 0.5;
+  position: absolute;
+}
+.store-container .store-none li.active::after {
+  background-color: #fff;
+  opacity: 1;
+}
 .store-container .store-imgbox .more-btn a {
   color: #b18468;
   background-color: #fff;

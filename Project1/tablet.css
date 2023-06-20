@@ -217,6 +217,9 @@ p {
   top: 40%;
   display: inline-block;
 }
+.store-container .store-none {
+  display: none;
+}
 .store-container .store-list {
   display: block;
   font-size: 17px;
