@@ -1,5 +1,211 @@
 @charset 'utf-8';
 
+body {
+  text-transform: capitalize;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Malgun Gothic",
+    "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
 .flex {
   display: flex;
+  justify-content: space-between;
 }
+
+.w87 {
+  width: 87%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.title_All {
+  border-bottom: 3px solid #000;
+  /* padding-bottom: 30px; */
+}
+.title_All h1 {
+  font-size: 120px;
+  font-weight: 500;
+  vertical-align: bottom;
+  text-align: end;
+}
+
+.title_All svg {
+  width: 250px;
+  transform: rotate(-180deg);
+}
+
+.moer_btn a {
+  display: block;
+  width: 100px;
+  margin: 30px 0;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: #dbfe04;
+  transition: 0.5s;
+}
+.moer_btn a:hover {
+  display: block;
+  width: 100px;
+  margin: 30px 0;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #dbfe04;
+}
+/* -------header------- */
+
+.nav_bar {
+  padding: 20px 0;
+}
+
+.nav_bar .toptxt {
+  justify-content: center;
+  align-content: center;
+}
+
+.nav_bar .toptxt .logo {
+  width: 100px;
+  background: url(./images/logo.png) no-repeat 50% / contain;
+  text-indent: -99999999px;
+}
+
+.nav_bar .toptxt .line {
+  margin: 0 10px;
+  height: 1px;
+  width: 75px;
+  align-self: center;
+}
+
+.nav_bar .toptxt .tbox {
+}
+
+.nav_bar ul {
+  width: 30%;
+}
+
+/* -------main------- */
+.mian_container {
+}
+
+.mian_container .mian_wrapr {
+}
+
+.mian_container .mian_wrapr .main_txt {
+}
+
+.mian_container .mian_wrapr .main_ani {
+}
+
+.mian_container .main_go svg {
+  width: 100%;
+}
+
+/* -------projects------- */
+.projects_container {
+  padding: 17vw 0;
+}
+.projects_container .projects_go .intogo {
+  margin-top: 2vw;
+  display: flex;
+  gap: 1.5vw;
+}
+.projects_container .projects_go .intogo a {
+  font-size: 15px;
+  display: block;
+  display: flex;
+  padding: 10px 40px;
+  background-color: #dbfe04;
+  border-radius: 50px;
+  gap: 10px;
+}
+.projects_container .projects_go .intogo a svg {
+  width: 15px;
+  transform: rotate(90deg);
+}
+.projects_container .combox h2 {
+  font-weight: 500;
+  font-size: 60px;
+  margin: 70px 0;
+  text-decoration: underline 2px;
+  text-underline-offset: 23px;
+  position: relative;
+}
+.projects_container .combox h2::before {
+  content: "";
+  display: block;
+  background-color: #000;
+  width: 200px;
+  height: 1.8px;
+  position: absolute;
+  bottom: 0;
+  left: -200px;
+}
+.projects_container .combox .site {
+  width: 48%;
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.projects_container .combox .site .site_bg {
+  width: 90%;
+  aspect-ratio: 5.7/4;
+  margin: 30px auto;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+.projects_container .combox .site .site_bg a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.projects_container .combox .site .site_bg:hover a {
+  background-color: #dbfe04;
+  opacity: 0.5;
+}
+.projects_container .indibox .site1 .site_bg {
+  background: url(./images/grangand.png) no-repeat 50% / cover;
+}
+.projects_container .combox .site .site_bg:hover {
+  backdrop-filter: grayscale(70%) blur(5px);
+}
+.projects_container .combox .site .site_txt {
+  width: 90%;
+  margin: 0 auto;
+}
+.projects_container .combox .site .site_txt h3 {
+  font-size: calc(1.2rem + 1vw);
+  margin: 5% 0;
+  font-weight: 500;
+}
+.projects_container .combox .site .site_txt p {
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+/* -------skills------- */
+.skills_container {
+}
+.skills_container .skills_bg {
+  background: linear-gradient(#ddfe0400, #dbfe04);
+}
+.skills_container .skills_text {
+}
+.skills_container .imz {
+  width: 30%;
+  align-content: center;
+}
+.skills_container .imz li {
+}
+.skills_container .imz li svg {
+  width: 30px;
+}
+.skills_container .imz li path {
+  fill: hsla(0, 100%, 46%, 0.493);
+}
+/* ------- About Me------- */
