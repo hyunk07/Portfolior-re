@@ -1,9 +1,15 @@
 @charset 'utf-8';
-
+/* 부드러운 스크롤 */
+html {
+  min-width: 1060px;
+  scroll-behavior: smooth;
+}
 body {
   text-transform: capitalize;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Malgun Gothic",
     "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+
+  /* Pretendard Variable" */
 }
 
 .flex {
@@ -133,9 +139,8 @@ body {
 }
 .mian_container .main_go {
   display: block;
-  vertical-align: top;
   position: relative;
-  font-weight: 500;
+  font-weight: 400;
   font-size: calc(1vw + 15px);
 }
 .mian_container .main_go .go_txt span:first-child {
@@ -156,7 +161,7 @@ body {
 }
 .mian_container .main_go .go_txt span svg {
   width: 10%;
-  animation: move1 2.5s infinite linear;
+  animation: move1 2s infinite;
 }
 
 @keyframes move1 {
@@ -172,7 +177,7 @@ body {
 }
 /* -------projects------- */
 .projects_container {
-  padding: 17vw 0;
+  padding: 5vw 0;
 }
 .projects_container .projects_go .intogo {
   margin-top: 2vw;
@@ -180,7 +185,9 @@ body {
   gap: 1.5vw;
 }
 .projects_container .projects_go .intogo a {
-  font-size: 15px;
+  font-family: Pretendard Variable;
+  font-weight: 500;
+  font-size: calc(5px + 1vw);
   display: block;
   display: flex;
   padding: 10px 40px;
@@ -189,8 +196,12 @@ body {
   gap: 10px;
 }
 .projects_container .projects_go .intogo a svg {
-  width: 15px;
+  width: calc(8px + 1vw);
   transform: rotate(90deg);
+  transition: 0.5s;
+}
+.projects_container .projects_go .intogo a:hover svg {
+  transform: rotate(45deg);
 }
 .projects_container .combox .site {
   width: 48%;
@@ -219,13 +230,14 @@ body {
   background: url(./images/grangand.png) no-repeat 50% / cover;
 }
 .projects_container .combox .site .site_txt {
+  font-family: Pretendard Variable;
   width: 90%;
   margin: 0 auto;
 }
 .projects_container .combox .site .site_txt h3 {
   font-size: calc(1.5rem + 1vw);
   margin: 5% 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 .projects_container .combox .site .site_txt p {
   margin: 15px 0;
@@ -260,16 +272,15 @@ body {
 }
 .skills_container .skills_text h2:before {
   content: "";
-  font-size: 7px;
-  font-weight: 700;
+  font-family: Pretendard Variable;
+  font-size: 15px;
   text-align: center;
   display: block;
   border: 1px solid #000;
-  border-radius: 10px;
-  width: 35px;
-  height: 17px;
+  border-radius: 15px;
+  padding: 3px 10px;
   position: absolute;
-  left: -40px;
+  left: -60px;
 }
 /* 숫자 */
 .skills_container .skills_text:first-child h2:before {
@@ -290,11 +301,11 @@ body {
 /* 내용넣기 */
 .skills_container .skills_text h2::after {
   content: "";
-  font-size: 14px;
+  font-family: Pretendard Variable;
+  font-size: 16px;
   font-weight: 400;
   text-align: left;
   line-height: 24px;
-  height: 96px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -303,14 +314,14 @@ body {
   transition: 0.5s;
 }
 .skills_container .skills_text:hover h2 {
-  right: 76px;
+  right: 80px;
 }
 .skills_container .skills_text:first-child:hover h2::after {
   content: "웹사이트 구축 \A flex,grid,position를 사용가능 \A 미디어 쿼리를 이용한 반응형 웹 제작 \A css로 간단한 애니메이션 구현";
   left: calc(100% + 40px);
 }
 .skills_container .skills_text:nth-child(2):hover h2::after {
-  content: "만물은 방지하는 바이며, 피에 원대하고, 어디 관현악이며, \A주며, 있다. 찾아 풀이 천하를 이상이 생의 가장 힘있다. 기쁘며, 싶이 피에 넣는 품으며, \A말이다. 찬미를 없으면 인간이 영원히 인생을 천자만홍이 이것이다. 것이 이 위하여\A 열락의 굳세게 풍부하게 철환하였는가?";
+  content: "웹사이트 구축 \A flex,grid,position를 사용가능 \A 미디어 쿼리를 이용한 반응형 웹 제작 \A css로 간단한 애니메이션 구현";
   left: calc(100% + 40px);
 }
 .skills_container .skills_text:nth-child(3):hover h2::after {
@@ -346,6 +357,7 @@ body {
 }
 .about_container .about_wrapr .about .flex {
   align-items: center;
+  gap: 30px;
 }
 .about_container .about_wrapr .about .me_img {
   width: 32%;
@@ -355,6 +367,7 @@ body {
   background: url(./images/me.jpg) no-repeat 50% / cover;
 }
 .about_container .about_wrapr .about .flex ul {
+  font-family: Pretendard Variable;
   font-size: calc(1rem + 0.5vw);
   line-height: 2;
   list-style: circle;
