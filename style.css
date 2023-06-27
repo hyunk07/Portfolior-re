@@ -100,9 +100,6 @@ body {
   align-self: center;
 }
 
-.nav_bar .toptxt .tbox {
-}
-
 .nav_bar ul {
   width: 30%;
 }
@@ -112,18 +109,67 @@ body {
 }
 
 .mian_container .mian_wrapr {
+  padding: calc(7vh + 4vw) 0;
 }
 
 .mian_container .mian_wrapr .main_txt {
 }
 
 .mian_container .mian_wrapr .main_ani {
+  width: 25%;
+  aspect-ratio: 1;
+  background: url(./images/main_ain.png) no-repeat 50% / cover;
+  animation: spin infinite linear 10s;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .mian_container .main_go svg {
   width: 100%;
 }
+.mian_container .main_go {
+  display: block;
+  vertical-align: top;
+  position: relative;
+  font-weight: 500;
+  font-size: calc(1vw + 15px);
+}
+.mian_container .main_go .go_txt span:first-child {
+  position: absolute;
+  top: 3%;
+  left: 20%;
+}
+.mian_container .main_go .go_txt span:nth-child(2) {
+  position: absolute;
+  bottom: 17%;
+  right: 5%;
+}
+.mian_container .main_go .go_txt span:last-child {
+  text-align: right;
+  position: absolute;
+  bottom: 17%;
+  right: 2%;
+}
+.mian_container .main_go .go_txt span svg {
+  width: 10%;
+  animation: move1 2.5s infinite linear;
+}
 
+@keyframes move1 {
+  0% {
+    transform: translateY(0%) rotate(135deg);
+  }
+  50% {
+    transform: translateY(50%) rotate(135deg);
+  }
+  100% {
+    transform: translateY(25%) rotate(135deg);
+  }
+}
 /* -------projects------- */
 .projects_container {
   padding: 17vw 0;
@@ -187,10 +233,15 @@ body {
 }
 
 /* -------skills------- */
-.skills_container {
-}
+
 .skills_container .skills_bg {
-  background: linear-gradient(#ddfe0400, #ddfe047e, #ddfe04dc);
+  background: linear-gradient(
+    #ddfe0400,
+    #ddfe047e,
+    #ddfe04dc,
+    #ddfe047e,
+    #ddfe0400
+  );
   padding: calc(200px + 1vw) 0;
 }
 .skills_container .skills_text {
@@ -288,89 +339,30 @@ body {
   fill: rgba(0, 0, 0, 0.8);
 }
 /* ------- About Me------- */
-.about_container {
-}
+
 .about_container .about_wrapr {
   background: linear-gradient(#ddfe0400, #ddfe047e, #ddfe04dc);
-  padding: calc(70px + 1vw) 0;
+  padding: calc(70px + 1vw) 0 0;
 }
-.about_container .about_wrapr .about {
+.about_container .about_wrapr .about .flex {
+  align-items: center;
 }
-.about_container .about_wrapr .about ul {
-  width: 70%;
+.about_container .about_wrapr .about .me_img {
+  width: 32%;
+  min-width: 265px;
+  aspect-ratio: 1;
+  border-radius: 30%;
+  background: url(./images/me.jpg) no-repeat 50% / cover;
+}
+.about_container .about_wrapr .about .flex ul {
+  font-size: calc(1rem + 0.5vw);
+  line-height: 2;
+  list-style: circle;
 }
 .about_container .about_wrapr .contact {
+  width: 30%;
+  padding-bottom: 30px;
 }
-.about_container footer {
-  text-align: center;
-}
-/* ------------------------- */
-/* .contact ul {
-  padding: 0;
-  list-style: none;
-  display: block;
-}
-.contact li {
-  width: 70px;
-  height: 70px;
-  position: relative;
-  display: block;
-}
-
-.contact li a {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-indent: -9999pc;
-}
-
-.contact li .mali {
-  background: url(./images/sns.svg) no-repeat;
-  background-position: left 50%;
-}
-
-.contact li .git {
-  background: url(./images/sns.svg) no-repeat;
-  background-position: left bottom;
-}
-
-.contact li .talk {
-  background: url(./images/sns.svg) no-repeat;
-  background-position: left top;
-}
-.contact li i {
-  display: block;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background-color: #131313;
-  overflow: hidden;
-  position: absolute;
-  left: 15px;
-  opacity: 0;
-}
-
-.contact li a:hover i {
-  opacity: 1;
-  left: 0;
-  top: 0;
-  z-index: -9;
-
-  transition-duration: 0.2s;
-}
-
-.contact li .mali:hover {
-  background-position: right top;
-}
-
-.contact li .git:hover {
-  background-position: right 50%;
-}
-
-.contact li .talk:hover {
-  background-position: right bottom;
-} */
 
 .contact li {
   width: 70px;
@@ -432,4 +424,10 @@ body {
 
 .contact li .talk:hover {
   background-position: right bottom;
+}
+
+.about_container footer {
+  text-align: center;
+  border-top: 1px solid #000;
+  padding: 30px 0;
 }

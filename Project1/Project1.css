@@ -134,6 +134,9 @@ header a img {
 }
 header nav .nav-bar {
   display: none;
+}
+header nav .nav-bar.act {
+  display: block;
   background-color: #fff;
   width: 100%;
   position: fixed;
