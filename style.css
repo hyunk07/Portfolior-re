@@ -25,12 +25,12 @@ body {
   /* padding-bottom: 30px; */
 }
 .title_All h1 {
-  font-size: 120px;
+  font-size: calc(5rem + 5vw);
   font-weight: 500;
   vertical-align: bottom;
   text-align: end;
+  text-align: left;
 }
-
 .title_All svg {
   width: 250px;
   transform: rotate(-180deg);
@@ -56,6 +56,25 @@ body {
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   color: #dbfe04;
+}
+
+.unline {
+  font-weight: 500;
+  font-size: 60px;
+  margin: 70px 0;
+  text-decoration: underline 2px;
+  text-underline-offset: 22px;
+  position: relative;
+}
+.unline::before {
+  content: "";
+  display: block;
+  background-color: #000;
+  width: 200px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: -200px;
 }
 /* -------header------- */
 
@@ -127,24 +146,6 @@ body {
   width: 15px;
   transform: rotate(90deg);
 }
-.projects_container .combox h2 {
-  font-weight: 500;
-  font-size: 60px;
-  margin: 70px 0;
-  text-decoration: underline 2px;
-  text-underline-offset: 23px;
-  position: relative;
-}
-.projects_container .combox h2::before {
-  content: "";
-  display: block;
-  background-color: #000;
-  width: 200px;
-  height: 1.8px;
-  position: absolute;
-  bottom: 0;
-  left: -200px;
-}
 .projects_container .combox .site {
   width: 48%;
   border: 1px solid #000;
@@ -171,15 +172,12 @@ body {
 .projects_container .indibox .site1 .site_bg {
   background: url(./images/grangand.png) no-repeat 50% / cover;
 }
-.projects_container .combox .site .site_bg:hover {
-  backdrop-filter: grayscale(70%) blur(5px);
-}
 .projects_container .combox .site .site_txt {
   width: 90%;
   margin: 0 auto;
 }
 .projects_container .combox .site .site_txt h3 {
-  font-size: calc(1.2rem + 1vw);
+  font-size: calc(1.5rem + 1vw);
   margin: 5% 0;
   font-weight: 500;
 }
@@ -192,20 +190,246 @@ body {
 .skills_container {
 }
 .skills_container .skills_bg {
-  background: linear-gradient(#ddfe0400, #dbfe04);
+  background: linear-gradient(#ddfe0400, #ddfe047e, #ddfe04dc);
+  padding: calc(200px + 1vw) 0;
 }
 .skills_container .skills_text {
+  border-bottom: 1px solid #000;
+}
+.skills_container .skills_text svg {
+  width: 20px;
+}
+.skills_container .skills_text h2 {
+  font-size: calc(3rem + 1vw);
+  font-weight: 500;
+  margin: 20px 0 40px;
+  position: relative;
+
+  /* overflow: hidden; */
+}
+.skills_container .skills_text h2:before {
+  content: "";
+  font-size: 7px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 35px;
+  height: 17px;
+  position: absolute;
+  left: -40px;
+}
+/* 숫자 */
+.skills_container .skills_text:first-child h2:before {
+  content: "01+";
+}
+.skills_container .skills_text:nth-child(2) h2:before {
+  content: "02+";
+}
+.skills_container .skills_text:nth-child(3) h2:before {
+  content: "03+";
+}
+.skills_container .skills_text:nth-child(4) h2:before {
+  content: "04+";
+}
+.skills_container .skills_text:nth-child(5) h2:before {
+  content: "05+";
+}
+/* 내용넣기 */
+.skills_container .skills_text h2::after {
+  content: "";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 24px;
+  height: 96px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 700px;
+  white-space: pre;
+  transition: 0.5s;
+}
+.skills_container .skills_text:hover h2 {
+  right: 76px;
+}
+.skills_container .skills_text:first-child:hover h2::after {
+  content: "웹사이트 구축 \A flex,grid,position를 사용가능 \A 미디어 쿼리를 이용한 반응형 웹 제작 \A css로 간단한 애니메이션 구현";
+  left: calc(100% + 40px);
+}
+.skills_container .skills_text:nth-child(2):hover h2::after {
+  content: "만물은 방지하는 바이며, 피에 원대하고, 어디 관현악이며, \A주며, 있다. 찾아 풀이 천하를 이상이 생의 가장 힘있다. 기쁘며, 싶이 피에 넣는 품으며, \A말이다. 찬미를 없으면 인간이 영원히 인생을 천자만홍이 이것이다. 것이 이 위하여\A 열락의 굳세게 풍부하게 철환하였는가?";
+  left: calc(100% + 40px);
+}
+.skills_container .skills_text:nth-child(3):hover h2::after {
+  content: "간단한 이미지 편집및 수정";
+  left: calc(100% + 40px);
+}
+.skills_container .skills_text:nth-child(4):hover h2::after {
+  content: "GitBash 사용가능 \A GitHub를 통해 버전관리 & 팀프로젝트공유";
+  left: calc(100% + 40px);
+}
+.skills_container .skills_text:nth-child(5):hover h2::after {
+  content: "와이어프레임& 프로토타입 제작 \A Figma를 이용한 팀프로젝트 ";
+  left: calc(100% + 40px);
 }
 .skills_container .imz {
-  width: 30%;
+  width: 15%;
   align-content: center;
 }
 .skills_container .imz li {
+  margin: 20px 0;
 }
 .skills_container .imz li svg {
-  width: 30px;
+  width: 15px;
 }
 .skills_container .imz li path {
-  fill: hsla(0, 100%, 46%, 0.493);
+  fill: rgba(0, 0, 0, 0.8);
 }
 /* ------- About Me------- */
+.about_container {
+}
+.about_container .about_wrapr {
+  background: linear-gradient(#ddfe0400, #ddfe047e, #ddfe04dc);
+  padding: calc(70px + 1vw) 0;
+}
+.about_container .about_wrapr .about {
+}
+.about_container .about_wrapr .about ul {
+  width: 70%;
+}
+.about_container .about_wrapr .contact {
+}
+.about_container footer {
+  text-align: center;
+}
+/* ------------------------- */
+/* .contact ul {
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+.contact li {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: block;
+}
+
+.contact li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999pc;
+}
+
+.contact li .mali {
+  background: url(./images/sns.svg) no-repeat;
+  background-position: left 50%;
+}
+
+.contact li .git {
+  background: url(./images/sns.svg) no-repeat;
+  background-position: left bottom;
+}
+
+.contact li .talk {
+  background: url(./images/sns.svg) no-repeat;
+  background-position: left top;
+}
+.contact li i {
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #131313;
+  overflow: hidden;
+  position: absolute;
+  left: 15px;
+  opacity: 0;
+}
+
+.contact li a:hover i {
+  opacity: 1;
+  left: 0;
+  top: 0;
+  z-index: -9;
+
+  transition-duration: 0.2s;
+}
+
+.contact li .mali:hover {
+  background-position: right top;
+}
+
+.contact li .git:hover {
+  background-position: right 50%;
+}
+
+.contact li .talk:hover {
+  background-position: right bottom;
+} */
+
+.contact li {
+  width: 70px;
+  height: 70px;
+  margin: 20px 0;
+}
+
+.contact li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999pc;
+}
+
+.contact li .mali {
+  background: url(./images/sns.png) no-repeat;
+  background-position: left top;
+}
+
+.contact li .git {
+  background: url(./images/sns.png) no-repeat;
+  background-position: left 50%;
+}
+
+.contact li .talk {
+  background: url(./images/sns.png) no-repeat;
+  background-position: left bottom;
+}
+
+.contact li i {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background-color: #000;
+  overflow: hidden;
+  position: absolute;
+  left: 15px;
+  opacity: 0;
+}
+
+.contact li:hover a i {
+  opacity: 1;
+  left: 0;
+  top: 0;
+  z-index: -9;
+
+  transition-duration: 0.2s;
+}
+
+.contact li .mali:hover {
+  background-position: right top;
+}
+
+.contact li:hover .git {
+  background-position: right 50%;
+}
+
+.contact li .talk:hover {
+  background-position: right bottom;
+}
