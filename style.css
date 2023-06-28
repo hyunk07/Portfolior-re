@@ -273,21 +273,19 @@ header {
   );
   padding: calc(200px + 1vw) 0;
 }
-.skills_container .skills_text {
+.skills_container .skills_mibox {
   border-bottom: 1px solid #000;
 }
-.skills_container .skills_text svg {
+.skills_container .skills_mibox svg {
   width: 20px;
 }
-.skills_container .skills_text h2 {
+.skills_container .skills_mibox h2 {
   font-size: calc(3rem + 1vw);
   font-weight: 500;
   margin: 20px 0 40px;
   position: relative;
-
-  /* overflow: hidden; */
 }
-.skills_container .skills_text h2:before {
+.skills_container .skills_mibox h2:before {
   content: "";
   font-family: Pretendard Variable;
   font-size: 15px;
@@ -300,58 +298,40 @@ header {
   left: -60px;
 }
 /* 숫자 */
-.skills_container .skills_text:first-child h2:before {
+.skills_container .skills_mibox:first-child h2:before {
   content: "01+";
 }
-.skills_container .skills_text:nth-child(2) h2:before {
+.skills_container .skills_mibox:nth-child(2) h2:before {
   content: "02+";
 }
-.skills_container .skills_text:nth-child(3) h2:before {
+.skills_container .skills_mibox:nth-child(3) h2:before {
   content: "03+";
 }
-.skills_container .skills_text:nth-child(4) h2:before {
+.skills_container .skills_mibox:nth-child(4) h2:before {
   content: "04+";
 }
-.skills_container .skills_text:nth-child(5) h2:before {
+.skills_container .skills_mibox:nth-child(5) h2:before {
   content: "05+";
 }
 /* 내용넣기 */
-.skills_container .skills_text h2::after {
-  content: "";
-  font-family: Pretendard Variable;
-  font-size: 17px;
-  font-weight: 400;
-  text-align: left;
-  line-height: 24px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 700px;
-  white-space: pre;
-  transition: 0.5s;
+.skills_container .skills_mibox .skills_txt {
+  align-items: center;
+  /* width: 80%; */
 }
-.skills_container .skills_text:hover h2 {
-  right: 80px;
+.skills_container .skills_mibox .skills_txt ul {
+  display: none;
 }
-.skills_container .skills_text:first-child:hover h2::after {
-  content: "웹사이트 구축 \A flex,grid,position를 사용가능 \A 미디어 쿼리를 이용한 반응형 웹 제작 \A css로 간단한 애니메이션 구현";
-  left: calc(100% + 40px);
+.skills_container .skills_mibox .skills_txt:hover {
+  width: 80%;
 }
-.skills_container .skills_text:nth-child(2):hover h2::after {
-  content: "";
-  left: calc(100% + 40px);
+.skills_container .skills_mibox .skills_txt:hover h2 {
+  width: 80%;
+  font-size: 1.5rem;
 }
-.skills_container .skills_text:nth-child(3):hover h2::after {
-  content: "간단한 이미지 편집및 수정";
-  left: calc(100% + 40px);
-}
-.skills_container .skills_text:nth-child(4):hover h2::after {
-  content: "GitBash 사용가능 \A GitHub를 통해 버전관리 & 팀프로젝트공유";
-  left: calc(100% + 40px);
-}
-.skills_container .skills_text:nth-child(5):hover h2::after {
-  content: "와이어프레임& 프로토타입 제작 \A Figma를 이용한 팀프로젝트 ";
-  left: calc(100% + 40px);
+.skills_container .skills_mibox .skills_txt:hover ul {
+  width: 70%;
+  display: block;
+  font-size: 1.2rem;
 }
 .skills_container .imz {
   width: 15%;
