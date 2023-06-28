@@ -83,7 +83,16 @@ body {
   left: -200px;
 }
 /* -------header------- */
-
+header {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+}
 .nav_bar {
   padding: 20px 0;
 }
@@ -208,16 +217,15 @@ body {
 }
 .projects_container .combox .site {
   width: 40%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 20px;
-  background-color: #fff;
+  background-color: rgba(238, 238, 238, 0.7);
 }
 .projects_container .combox .site .site_bg {
   width: 90%;
   aspect-ratio: 5.7/4;
   margin: 30px auto;
   border-radius: 20px;
-  border: 1px solid #000;
 }
 .projects_container .combox .site .site_bg a {
   display: block;
@@ -324,7 +332,7 @@ body {
   left: calc(100% + 40px);
 }
 .skills_container .skills_text:nth-child(2):hover h2::after {
-  content: "웹사이트 구축 \A flex,grid,position를 사용가능 \A 미디어 쿼리를 이용한 반응형 웹 제작 \A css로 간단한 애니메이션 구현";
+  content: "";
   left: calc(100% + 40px);
 }
 .skills_container .skills_text:nth-child(3):hover h2::after {
@@ -410,9 +418,6 @@ body {
 }
 
 .contact li i {
-  display: block;
-  width: 70px;
-  height: 70px;
   border-radius: 20px;
   background-color: #000;
   overflow: hidden;
@@ -422,6 +427,9 @@ body {
 }
 
 .contact li:hover a i {
+  display: block;
+  width: 70px;
+  height: 70px;
   opacity: 1;
   left: 0;
   top: 0;
