@@ -1,358 +1,293 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>GRANHAND.</title>
 
-    <!-- 리셋 -->
-    <link rel="stylesheet" href="../common/style/reset.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>GRANHAND.</title>
 
-    <!-- 폰트 -->
-    <link
-      rel="stylesheet"
-      href="../common/style/pretendardvariable-dynamic-subset.css"
-    />
-    <link rel="stylesheet" href="../common/style/Poppins.css" />
-    <!-- 오픈그라피 -->
-    <meta name="title" content="GRANHAND." />
-    <meta
-      name="description"
-      content="SOMETIMES YOU WIN, SOMETIMES YOU LEARN."
-    />
+  <!-- 리셋 -->
+  <link rel="stylesheet" href="../common/style/reset.css" />
 
-    <meta property="og:title" content="GRANHAND." />
-    <meta
-      property="og:description"
-      content="SOMETIMES YOU WIN, SOMETIMES YOU LEARN."
-    />
-    <meta property="og:image" content="./images/openbg.png" />
-    <meta
-      property="og:url"
-      content="https://hyunk07.github.io/Portfolio/Project1/Project1.html"
-    />
+  <!-- 폰트 -->
+  <link rel="stylesheet" href="../common/style/pretendardvariable-dynamic-subset.css" />
+  <link rel="stylesheet" href="../common/style/Poppins.css" />
+  <!-- 오픈그라피 -->
+  <meta name="title" content="GRANHAND." />
+  <meta name="description" content="SOMETIMES YOU WIN, SOMETIMES YOU LEARN." />
 
-    <!-- 파비콘 -->
-    <link
-      rel="shortcut icon"
-      href="../common/favicon.ioc/GRANHAND/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../common/favicon.ioc/GRANHAND/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../common/favicon.ioc/GRANHAND/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../common/favicon.ioc/GRANHAND/favicon-16x16.png"
-    />
-    <link
-      rel="manifest"
-      href="../common/favicon.ioc/GRANHAND/site.webmanifest"
-    />
+  <meta property="og:title" content="GRANHAND." />
+  <meta property="og:description" content="SOMETIMES YOU WIN, SOMETIMES YOU LEARN." />
+  <meta property="og:image" content="./images/openbg.png" />
+  <meta property="og:url" content="https://hyunk07.github.io/Portfolio/Project1/Project1.html" />
 
-    <!-- 모바일 -->
-    <link rel="stylesheet" href="./Project1.css" />
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="../common/favicon.ioc/GRANHAND/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../common/favicon.ioc/GRANHAND/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../common/favicon.ioc/GRANHAND/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../common/favicon.ioc/GRANHAND/favicon-16x16.png" />
+  <link rel="manifest" href="../common/favicon.ioc/GRANHAND/site.webmanifest" />
 
-    <!-- tablet -->
-    <link rel="stylesheet" href="./tablet.css" media="(width>=750px)" />
+  <!-- 모바일 -->
+  <link rel="stylesheet" href="./Project1.css" />
 
-    <!-- pc -->
-    <link rel="stylesheet" href="./pc.css" media="(width>=1200px)" />
+  <!-- tablet -->
+  <link rel="stylesheet" href="./tablet.css" media="(width>=750px)" />
 
-    <!-- kakao-map -->
-    <script
-      type="text/javascript"
-      src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=31dbad97ee85ffcde0d5d78f11eb716b"
-    ></script>
-    <!-- jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script defer src="./Project1.js"></script>
-  </head>
+  <!-- pc -->
+  <link rel="stylesheet" href="./pc.css" media="(width>=1200px)" />
 
-  <body>
-    <!-----------header----------->
-    <header id="topbar">
-      <div class="header-wrapper flex wrap85">
-        <h1>
-          <a href="#"><img src="./images/logo.png" alt="logo" /></a>
-        </h1>
-        <nav>
-          <ul class="nav-bar">
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">JOURNAL</a></li>
-            <li><a href="#">WALLPAER</a></li>
-            <li><a href="#STORES">STORES</a></li>
-            <li><a href="#CONTACT">CONTACT</a></li>
-          </ul>
-          <div class="mobile-btn">
-            <!--  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- kakao-map -->
+  <script type="text/javascript"
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=31dbad97ee85ffcde0d5d78f11eb716b"></script>
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script defer src="./Project1.js"></script>
+</head>
+
+<body>
+  <!-----------header----------->
+  <header id="topbar">
+    <div class="header-wrapper flex wrap85">
+      <h1>
+        <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+      </h1>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">JOURNAL</a></li>
+          <li><a href="#">WALLPAER</a></li>
+          <li><a href="#STORES">STORES</a></li>
+          <li><a href="#CONTACT">CONTACT</a></li>
+        </ul>
+        <div class="mobile-btn">
+          <!--  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                      <path
                         d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                   </svg></a> -->
-            <a href="#"> <i></i></a>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-----------main----------->
-    <!-- main-container -->
-    <section>
-      <div class="main-container">
-        <div class="main-box flex wrap85">
-          <menu class="num-btn">
-            <li><a href="#">01</a></li>
-            <li><a href="#">02</a></li>
-            <li><a href="#">03</a></li>
-          </menu>
-          <div class="box-txt">
-            <h2>
-              <span>동물실험을 하지않은</span>
-              <span>크루얼티 프리</span>
-              <strong>그랑핸드</strong>
-            </h2>
-            <h3><strong>GRANHAND</strong></h3>
-            <p>
-              <span
-                >'향의 일상화'를 모토로, 편하게 즐길 수 있는 향과 제품을
-                연구합니다.
-              </span>
-              <span
-                >일상을 벗어난 특별한 하루보다는 일상 그 자체를 더 좋고 아름답게
-                만드는 것에 도움이 되는 존재이고 싶습니다.
-              </span>
-              <span
-                >누구나 마음 한편에서 소망하는 '조금 나은 일상'을 향으로서
-                제안합니다.</span
-              >
-            </p>
-          </div>
+          <a href="#"> <i></i></a>
         </div>
-        <div class="main-img wrap85">
-          <img src="./images/bukchon.jpg" alt="bukchon상점" />
-        </div>
-        <!-- --------sprite -------- -->
-        <div class="main-sns">
-          <ul class="flex">
-            <li>
-              <a
-                href="https://www.facebook.com/p/GRANHAND-100064642753266/"
-                target="_blank"
-                class="facebook"
-                >facebook<i></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/granhand_official/"
-                target="_blank"
-                class="instagram"
-                >instagram<i></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/@granhand"
-                target="_blank"
-                class="youtube"
-                >youtube<i></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-
-        <a href="#about">
-          <div class="main-down">
-            <i></i>
-          </div>
-        </a>
-        <div class="main-arrow flex">
-          <a href="#">
-            <div class="left-btn"></div>
-          </a>
-          <a href="#">
-            <div class="right-btn"></div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- about-container -->
-    <section id="about">
-      <div class="about-container">
-        <div class="about-wrap wrap85">
-          <div class="commonness-txt">
-            <h2>ABOUT</h2>
-            <h3>
-              <span>SOMETIMES YOU WIN,</span>
-              <span>SOMETIMES YOU LEARN.</span>
-            </h3>
-            <p>
-              <span>그랑핸드의 'Fragrance'는 다양한 용도를 위한 </span>
-              <span>멀티 'Perfume'과 특별한 개성을 담은'Signature'로</span>
-              <span>독창성과 정체성을 담아내고 있어 특별하며 천연 원료로</span>
-              <span
-                >만든 'Natural' 스프레이는 쉽게 기분을 전환할 수 있습니다</span
-              >
-            </p>
-            <div class="more-btn"><a href="#">MORE</a></div>
-          </div>
-
-          <div class="about-img">
-            <img src="./images/img.png" alt="삽입 이미지" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ani-container -->
-    <section class="ani">
-      <div class="ani-container">
-        <h1>GRANHAND SIGNATURE FRAGRANCE GRANHAND SIGNATURE FRAGRANCE</h1>
-        <h2 id="STORES">
-          GRANHAND SIGNATURE FRAGRANCE GRANHAND SIGNATURE FRAGRANCE
-        </h2>
-      </div>
-    </section>
-    <!-- store-container -->
-    <section>
-      <div class="store-container">
-        <div class="store-wrap wrap85">
-          <div class="commonness-txt">
-            <div class="store-title">
-              <h2>STORES</h2>
-              <h3>
-                <span>GRANHAND</span>
-                <span>STORES </span>
-              </h3>
-            </div>
-            <div class="store-text">
-              <p>
-                향은 보이지도 잡히지도 않지만, 우리에게 수많은 기억과 감정을
-                각인시키고, 나가 우리 삶 속에서 많은 부분을 결정합니다.
-                그랑핸드는 이러한 향의 가치를 믿으며 이를 매개로 한 끊임없는
-                시도를 통해 향의 일상화를 꿈꿉니다. 그랑핸드는 쉽게 소비되고
-                잊혀질 무언가가 아닌, 보이지 않는 곳에서 뚜렷한 존재감으로 모든
-                사람에게 우리의 마음과 온기를 전합니다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="store-imgbox">
-          <div class="store-info wrap85">
-            <div class="commonness-txt">
-              <h3>그랑핸드 서촌</h3>
-              <p>
-                <span
-                  >서울의 과거와 현재가 공존하는 경복궁 옆 그랑핸드
-                  서촌점은</span
-                >
-                <span
-                  >2층으로 이루어져 있습니다. 큰 감나무가 반겨주는
-                  정감있는</span
-                >
-                <span>공간으로 주변에 맛집과 볼거리가 다양합니다.</span>
-              </p>
-            </div>
-            <div class="more-btn"><a href="#">MORE</a></div>
-          </div>
-          <menu class="store-none">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-          </menu>
-          <menu class="store-list">
-            <li><a href="#">DOSAN</a></li>
-            <li><a href="#">NAMSAN</a></li>
-            <li><a href="#">MAPO</a></li>
-            <li><a href="#">SEOCHON</a></li>
-            <li><a href="#">SOGYRONK</a></li>
-            <li><a href="#">BUKCHON</a></li>
-          </menu>
-        </div>
-      </div>
-    </section>
-    <!-- container -->
-    <section id="CONTACT">
-      <div class="map-container">
-        <div class="map-wrap wrap85">
-          <div class="commonness-txt">
-            <h2>CONTACT</h2>
-            <h3>
-              <span>나만의</span>
-              <span>취향과 향기을</span>
-              <span>찾는 공간 그랑핸드</span>
-            </h3>
-            <div class="kakao-map" id="kakao-map"></div>
-            <p>
-              <span>서울 종로구 자하문로4길 14-2 (통의동) 그랑핸드 서촌</span>
-              <span>hello@granhand.com</span>
-            </p>
-          </div>
-
-          <div class="more-btn">
-            <a href="http://kko.to/EvUgv6RH4a" target="_blank">KAKAO MAP</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-----------footer----------->
-    <footer>
-      <div class="info-container">
-        <div class="info-wrap flex">
-          <div class="info-sns flex">
-            <div>
-              <a
-                href="https://www.facebook.com/p/GRANHAND-100064642753266/"
-                target="_blank"
-                >Facebook</a
-              >
-            </div>
-            <div>
-              <a
-                href="https://www.instagram.com/granhand_official/"
-                target="_blank"
-                >Instagram</a
-              >
-            </div>
-            <div>
-              <a href="https://www.youtube.com/@granhand" target="_blank"
-                >Youtube</a
-              >
-            </div>
-          </div>
-          <div class="info-copy flex">
-            <div>COPYRIGHT</div>
-            <div><strong>©GRANHAND</strong></div>
-            <div>ALL RIGHTS RESERVED.</div>
-          </div>
-          <menu class="info-tel">
-            <li><strong>TEL</strong><a href="#">02-333-6525</a></li>
-            <li><strong>E-MAIL</strong><a href="#">hello@granhand.com</a></li>
-            <li class="flex">
-              <strong>ADDRESS</strong>
-              <span>03044 서울특별시 종로구 자하문로4길 14-2</span>
-            </li>
-          </menu>
-          <div class="info-me">
-            <div><a href="../index.html">포트폴리오 바로기기</a></div>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </nav>
+    </div>
     <a href="# " class="upbtn"><i></i></a>
-  </body>
+  </header>
+  <!-----------main----------->
+  <!-- main-container -->
+  <section>
+    <div class="main-container">
+      <div class="main-box flex wrap85">
+        <menu class="num-btn">
+          <li><a href="#">01</a></li>
+          <li><a href="#">02</a></li>
+          <li><a href="#">03</a></li>
+        </menu>
+        <div class="box-txt">
+          <h2>
+            <span>동물실험을 하지않은</span>
+            <span>크루얼티 프리</span>
+            <strong>그랑핸드</strong>
+          </h2>
+          <h3><strong>GRANHAND</strong></h3>
+          <p>
+            <span>'향의 일상화'를 모토로, 편하게 즐길 수 있는 향과 제품을
+              연구합니다.
+            </span>
+            <span>일상을 벗어난 특별한 하루보다는 일상 그 자체를 더 좋고 아름답게
+              만드는 것에 도움이 되는 존재이고 싶습니다.
+            </span>
+            <span>누구나 마음 한편에서 소망하는 '조금 나은 일상'을 향으로서
+              제안합니다.</span>
+          </p>
+        </div>
+      </div>
+      <div class="main-img wrap85">
+        <img src="./images/bukchon.jpg" alt="bukchon상점" />
+      </div>
+      <!-- --------sprite -------- -->
+      <div class="main-sns">
+        <ul class="flex">
+          <li>
+            <a href="https://www.facebook.com/p/GRANHAND-100064642753266/" target="_blank"
+              class="facebook">facebook<i></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/granhand_official/" target="_blank"
+              class="instagram">instagram<i></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@granhand" target="_blank" class="youtube">youtube<i></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#about">
+        <div class="main-down">
+          <i></i>
+        </div>
+      </a>
+      <div class="main-arrow flex">
+        <a href="#">
+          <div class="left-btn"></div>
+        </a>
+        <a href="#">
+          <div class="right-btn"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- about-container -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-wrap wrap85">
+        <div class="commonness-txt">
+          <h2>ABOUT</h2>
+          <h3>
+            <span>SOMETIMES YOU WIN,</span>
+            <span>SOMETIMES YOU LEARN.</span>
+          </h3>
+          <p>
+            <span>그랑핸드의 'Fragrance'는 다양한 용도를 위한 </span>
+            <span>멀티 'Perfume'과 특별한 개성을 담은'Signature'로</span>
+            <span>독창성과 정체성을 담아내고 있어 특별하며 천연 원료로</span>
+            <span>만든 'Natural' 스프레이는 쉽게 기분을 전환할 수 있습니다</span>
+          </p>
+          <div class="more-btn"><a href="#">MORE</a></div>
+        </div>
+
+        <div class="about-img">
+          <img src="./images/img.png" alt="삽입 이미지" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ani-container -->
+  <section class="ani">
+    <div class="ani-container">
+      <h1>GRANHAND SIGNATURE FRAGRANCE GRANHAND SIGNATURE FRAGRANCE</h1>
+      <h2 id="STORES">
+        GRANHAND SIGNATURE FRAGRANCE GRANHAND SIGNATURE FRAGRANCE
+      </h2>
+    </div>
+  </section>
+  <!-- store-container -->
+  <section>
+    <div class="store-container">
+      <div class="store-wrap wrap85">
+        <div class="commonness-txt">
+          <div class="store-title">
+            <h2>STORES</h2>
+            <h3>
+              <span>GRANHAND</span>
+              <span>STORES </span>
+            </h3>
+          </div>
+          <div class="store-text">
+            <p>
+              향은 보이지도 잡히지도 않지만, 우리에게 수많은 기억과 감정을
+              각인시키고, 나가 우리 삶 속에서 많은 부분을 결정합니다.
+              그랑핸드는 이러한 향의 가치를 믿으며 이를 매개로 한 끊임없는
+              시도를 통해 향의 일상화를 꿈꿉니다. 그랑핸드는 쉽게 소비되고
+              잊혀질 무언가가 아닌, 보이지 않는 곳에서 뚜렷한 존재감으로 모든
+              사람에게 우리의 마음과 온기를 전합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="store-imgbox">
+        <div class="store-info wrap85">
+          <div class="commonness-txt">
+            <h3>그랑핸드 서촌</h3>
+            <p>
+              <span>서울의 과거와 현재가 공존하는 경복궁 옆 그랑핸드
+                서촌점은</span>
+              <span>2층으로 이루어져 있습니다. 큰 감나무가 반겨주는
+                정감있는</span>
+              <span>공간으로 주변에 맛집과 볼거리가 다양합니다.</span>
+            </p>
+          </div>
+          <div class="more-btn"><a href="#">MORE</a></div>
+        </div>
+        <menu class="store-none">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </menu>
+        <menu class="store-list">
+          <li><a href="#">DOSAN</a></li>
+          <li><a href="#">NAMSAN</a></li>
+          <li><a href="#">MAPO</a></li>
+          <li><a href="#">SEOCHON</a></li>
+          <li><a href="#">SOGYRONK</a></li>
+          <li><a href="#">BUKCHON</a></li>
+        </menu>
+      </div>
+    </div>
+  </section>
+  <!-- container -->
+  <section id="CONTACT">
+    <div class="map-container">
+      <div class="map-wrap wrap85">
+        <div class="commonness-txt">
+          <h2>CONTACT</h2>
+          <h3>
+            <span>나만의</span>
+            <span>취향과 향기을</span>
+            <span>찾는 공간 그랑핸드</span>
+          </h3>
+          <div class="kakao-map" id="kakao-map"></div>
+          <p>
+            <span>서울 종로구 자하문로4길 14-2 (통의동) 그랑핸드 서촌</span>
+            <span>hello@granhand.com</span>
+          </p>
+        </div>
+
+        <div class="more-btn">
+          <a href="http://kko.to/EvUgv6RH4a" target="_blank">KAKAO MAP</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------footer----------->
+  <footer>
+    <div class="info-container">
+      <div class="info-wrap flex">
+        <div class="info-sns flex">
+          <div>
+            <a href="https://www.facebook.com/p/GRANHAND-100064642753266/" target="_blank">Facebook</a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/granhand_official/" target="_blank">Instagram</a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/@granhand" target="_blank">Youtube</a>
+          </div>
+        </div>
+        <div class="info-copy flex">
+          <div>COPYRIGHT</div>
+          <div><strong>©GRANHAND</strong></div>
+          <div>ALL RIGHTS RESERVED.</div>
+        </div>
+        <menu class="info-tel">
+          <li><strong>TEL</strong><a href="#">02-333-6525</a></li>
+          <li><strong>E-MAIL</strong><a href="#">hello@granhand.com</a></li>
+          <li class="flex">
+            <strong>ADDRESS</strong>
+            <span>03044 서울특별시 종로구 자하문로4길 14-2</span>
+          </li>
+        </menu>
+        <div class="info-me">
+          <div><a href="../index.html">포트폴리오 바로기기</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>

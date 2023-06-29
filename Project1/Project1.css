@@ -41,6 +41,9 @@ html {
   background-color: #131313;
   position: fixed;
   z-index: 99;
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
 }
 .upbtn i {
   position: absolute;

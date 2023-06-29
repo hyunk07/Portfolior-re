@@ -218,15 +218,7 @@ header {
 .projects_container .projects_go .intogo a:hover svg {
   transform: rotate(45deg);
 }
-.projects_container .combox .flex {
-  justify-content: space-around;
-}
-.projects_container .combox .site {
-  width: 40%;
-  /* border: 1px solid #000; */
-  border-radius: 20px;
-  background-color: rgba(238, 238, 238, 0.7);
-}
+
 .projects_container .combox .site .site_bg {
   width: 90%;
   aspect-ratio: 5.7/4;
@@ -260,7 +252,109 @@ header {
   margin: 15px 0;
   font-weight: 500;
 }
+/* ------------ */
+.combox .slide {
+  width: 80%;
+  height: 40vw;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
 
+  background-color: rgb(195, 214, 255);
+}
+
+.combox ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.gallery {
+  display: flex;
+  width: 200%;
+}
+
+.gallery li {
+  width: 50%;
+}
+
+.combox .slide {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.combox .btn_group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.combox .btn_group li {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ------------- */
+.combox .site {
+  padding: 10px 0;
+  /* border: 1px solid #000; */
+  border-radius: 20px;
+  max-width: 505.031px;
+  min-height: 622.672px;
+  background-color: rgb(204, 204, 204);
+}
+
+.combox .site .site_bg {
+  width: 90%;
+  aspect-ratio: 5.7/4;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+
+.combox .site .site_bg a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.combox .site .site_bg:hover a {
+  background-color: #dbfe04;
+  opacity: 0.5;
+}
+
+.indibox .site1 .site_bg {
+  background: url(./images/grangand.png) no-repeat 50% / cover;
+}
+
+.combox .site .site_txt {
+  font-family: Pretendard Variable;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.combox .site .site_txt h3 {
+  font-size: calc(1.5rem + 1vw);
+  margin: 5% 0;
+  font-weight: 600;
+}
+
+.combox .site .site_txt p {
+  margin: 15px 0;
+  font-weight: 500;
+}
 /* -------skills------- */
 
 .skills_container .skills_bg {
@@ -360,7 +454,7 @@ header {
   width: 32%;
   min-width: 265px;
   aspect-ratio: 1;
-  border-radius: 30%;
+  border-radius: 50%;
   background: url(./images/me.jpg) no-repeat 50% / cover;
 }
 .about_container .about_wrapr .about .flex ul {

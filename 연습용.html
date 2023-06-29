@@ -1,0 +1,196 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>slide</title>
+   <link rel="stylesheet" href="./common/style/reset.css">
+   <link rel="stylesheet" href="./style.css" />
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+   <style>
+      .combox .slide {
+         width: 80%;
+         height: 70vh;
+         margin: 50px auto;
+         position: relative;
+         overflow: hidden;
+
+         background-color: rgb(195, 214, 255);
+      }
+
+      .combox ul {
+         padding: 0;
+         margin: 0;
+         list-style: none;
+      }
+
+      .gallery {
+         display: flex;
+         width: 200%;
+      }
+
+      .gallery li {
+         width: 50%;
+         padding: 0 20px;
+      }
+
+      .combox .slide {
+         width: 90%;
+         margin: 0 auto;
+         overflow: hidden;
+      }
+
+      .combox .btn_group {
+         /* width: 80%; */
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         width: 100%;
+         height: 100%;
+         position: absolute;
+      }
+
+      .combox .btn_group li {
+         background-color: rgba(0, 0, 0, 0.8);
+         color: #fff;
+         width: 40px;
+         height: 40px;
+         line-height: 40px;
+         font-size: 2rem;
+         text-align: center;
+         cursor: pointer;
+      }
+
+      /* ------------- */
+      .combox .site {
+         /* border: 1px solid #000; */
+         border-radius: 20px;
+         background-color: rgba(255, 255, 255, 1);
+      }
+
+      .combox .site .site_bg {
+         width: 90%;
+         aspect-ratio: 5.7/4;
+         margin: 30px auto;
+         border-radius: 20px;
+      }
+
+      .combox .site .site_bg a {
+         display: block;
+         width: 100%;
+         height: 100%;
+         border-radius: 20px;
+      }
+
+      .combox .site .site_bg:hover a {
+         background-color: #dbfe04;
+         opacity: 0.5;
+      }
+
+      .indibox .site1 .site_bg {
+         background: url(./images/grangand.png) no-repeat 50% / cover;
+      }
+
+      .combox .site .site_txt {
+         font-family: Pretendard Variable;
+         width: 90%;
+         margin: 0 auto;
+      }
+
+      .combox .site .site_txt h3 {
+         font-size: calc(1.5rem + 1vw);
+         margin: 5% 0;
+         font-weight: 600;
+      }
+
+      .combox .site .site_txt p {
+         margin: 15px 0;
+         font-weight: 500;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="combox indibox">
+      <h2 class="unline">individual</h2>
+      <ul class="btn_group">
+         <li><i>0</i></li>
+         <li><i>0</i></li>
+      </ul>
+      <div class="slide">
+         <ul class="gallery">
+            <li>
+               <div class="site site1">
+                  <div class="site_bg">
+                     <a href="#"></a>
+                  </div>
+                  <div class="site_txt">
+                     <h3>사이트1</h3>
+                     <p><strong>기간: </strong><span>2023.06.08~06.16</span></p>
+                     <p>#반응형 #HTML&CSS</p>
+                     <div class="moer_btn"><a href="#">more</a></div>
+                  </div>
+               </div>
+
+            </li>
+            <li>
+               <div class="site site1">
+                  <div class="site_bg">
+                     <a href="#"></a>
+                  </div>
+                  <div class="site_txt">
+                     <h3>사이트2</h3>
+                     <p><strong>기간: </strong><span>2023.06.08~06.16</span></p>
+                     <p>#반응형 #HTML&CSS</p>
+                     <div class="moer_btn"><a href="#">more</a></div>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="site site1">
+                  <div class="site_bg">
+                     <a href="#"></a>
+                  </div>
+                  <div class="site_txt">
+                     <h3>사이트3</h3>
+                     <p><strong>기간: </strong><span>2023.06.08~06.16</span></p>
+                     <p>#반응형 #HTML&CSS</p>
+                     <div class="moer_btn"><a href="#">more</a></div>
+                  </div>
+               </div>
+
+            </li>
+            <li>
+               <div class="site site1">
+                  <div class="site_bg">
+                     <a href="#"></a>
+                  </div>
+                  <div class="site_txt">
+                     <h3>사이트4</h3>
+                     <p><strong>기간: </strong><span>2023.06.08~06.16</span></p>
+                     <p>#반응형 #HTML&CSS</p>
+                     <div class="moer_btn"><a href="#">more</a></div>
+                  </div>
+               </div>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <script>
+      //왼쪽 버튼, 이전버튼
+      $('.btn_group li:first-child').on('click', () => {
+         $('.gallery li').last().prependTo('.gallery ');
+         // $('.gallery').animate({ marginLeft: 90 * idx + '%' }, 300);
+      });
+
+      //오른쪽 버튼, 다음버튼
+      $('.btn_group li').last().on('click', () => {
+         $('.gallery li').first().appendTo('.gallery');
+      });
+   </script>
+</body>
+
+</html>
