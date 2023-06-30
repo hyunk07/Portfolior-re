@@ -1,0 +1,93 @@
+@charset 'utf-8';
+.combox {
+}
+/* .indibox {} */
+.combox .btn_group {
+  width: 96%;
+  margin: 0 auto;
+  align-items: center;
+}
+.combox .btn_group .prevBtn,
+.combox .btn_group .nexBtn {
+  width: 60px;
+  height: 60px;
+}
+.combox .btn_group .prevBtn i,
+.combox .btn_group .nexBtn i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top: 2px #000 solid;
+  border-left: 2px #000 solid;
+}
+.combox .btn_group .prevBtn i {
+  transform: rotate(-45deg);
+}
+.combox .btn_group .nexBtn i {
+  transform: rotate(135deg);
+}
+.combox .slide {
+  width: 87%;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  background-color: rgb(195, 214, 255);
+}
+.combox .gallery {
+  display: flex;
+  width: 200%;
+
+  background-color: #6527be;
+}
+/* .combox .ingallery {} */
+.combox .gallery li {
+  width: 50%;
+
+  background-color: #ffffff;
+}
+.combox .gallery .site {
+  padding: 10px 0;
+  border: 1px solid #000;
+  border-radius: 20px;
+  min-width: 100%;
+  max-width: 505.031px;
+  min-height: 622.672px;
+  max-height: 100%;
+  background-color: rgb(204, 204, 204);
+}
+/* ---- */
+.combox .gallery .site .site_bg {
+  width: 90%;
+  aspect-ratio: 5.7/4;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+.combox .site .site_bg a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.combox .site .site_bg:hover a {
+  background-color: #dbfe04;
+  opacity: 0.5;
+}
+.indibox .site1 .site_bg {
+  background: url(./images/grangand.png) no-repeat 50% / cover;
+}
+/* ---- */
+.combox .gallery .site .site_txt {
+  font-family: Pretendard Variable;
+  width: 90%;
+  margin: 0 auto;
+}
+.combox .gallery .site .site_txt h3 {
+  font-size: calc(1.5rem + 1vw);
+  margin: 5% 0;
+  font-weight: 600;
+}
+.combox .gallery .site .site_txt p {
+  margin: 15px 0;
+  font-weight: 500;
+}

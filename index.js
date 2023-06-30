@@ -23,13 +23,13 @@ $(window).on("scroll", () => {
 /* -------슬라이드------ */
 /* 개인 */
 //왼쪽 버튼, 이전버튼
-$(".prevBtn").on("click", () => {
+$(".inprevBtn").on("click", () => {
   $(" .ingallery > li").last().prependTo(".ingallery ");
   // $('.gallery').animate({ marginLeft: 90 * idx + '%' }, 300);
 });
 
 //오른쪽 버튼, 다음버튼
-$(".nexBtn")
+$(".innexBtn")
   .last()
   .on("click", () => {
     $(" .ingallery> li").first().appendTo(".ingallery");

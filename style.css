@@ -67,10 +67,12 @@ body {
 .unline {
   font-weight: 500;
   font-size: 60px;
-  margin: 70px 0;
   text-decoration: underline 2px;
   text-underline-offset: 22px;
   position: relative;
+}
+.projects_container .combox .unline {
+  margin: 70px auto;
 }
 .unline::before {
   content: "";
@@ -218,143 +220,97 @@ header {
 .projects_container .projects_go .intogo a:hover svg {
   transform: rotate(45deg);
 }
-
-.projects_container .combox .site .site_bg {
-  width: 90%;
-  aspect-ratio: 5.7/4;
-  margin: 30px auto;
-  border-radius: 20px;
+/* ------------바로가기------------ */
+.combox {
 }
-.projects_container .combox .site .site_bg a {
+/* .indibox {} */
+.combox .btn_group {
+  width: 96%;
+  margin: 0 auto;
+  align-items: center;
+}
+.combox .btn_group .prevBtn,
+.combox .btn_group .nexBtn {
+  width: 60px;
+  height: 60px;
+}
+.combox .btn_group .prevBtn i,
+.combox .btn_group .nexBtn i {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-top: 2px #000 solid;
+  border-left: 2px #000 solid;
 }
-.projects_container .combox .site .site_bg:hover a {
-  background-color: #dbfe04;
-  opacity: 0.5;
+.combox .btn_group .prevBtn i {
+  transform: rotate(-45deg);
 }
-.projects_container .indibox .site1 .site_bg {
-  background: url(./images/grangand.png) no-repeat 50% / cover;
+.combox .btn_group .nexBtn i {
+  transform: rotate(135deg);
 }
-.projects_container .combox .site .site_txt {
-  font-family: Pretendard Variable;
-  width: 90%;
-  margin: 0 auto;
-}
-.projects_container .combox .site .site_txt h3 {
-  font-size: calc(1.5rem + 1vw);
-  margin: 5% 0;
-  font-weight: 600;
-}
-.projects_container .combox .site .site_txt p {
-  margin: 15px 0;
-  font-weight: 500;
-}
-/* ------------ */
 .combox .slide {
-  width: 80%;
-  height: 40vw;
-  margin: 50px auto;
-  position: relative;
+  width: 87%;
+  min-width: 1100px;
+  min-height: 622.672px;
+  margin: 0 auto;
   overflow: hidden;
-
+  padding: 30px 0;
   background-color: rgb(195, 214, 255);
 }
-
-.combox ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.gallery {
+.combox .gallery {
   display: flex;
   width: 200%;
 }
-
-.gallery li {
+.combox .gallery li {
   width: 50%;
+  gap: 30px;
 }
-
-.combox .slide {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.combox .btn_group {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.combox .btn_group li {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 2rem;
-  text-align: center;
-  cursor: pointer;
-}
-
-/* ------------- */
-.combox .site {
+.combox .gallery .site {
   padding: 10px 0;
-  /* border: 1px solid #000; */
   border-radius: 20px;
+  margin: 0 auto;
+  /* min-width: 100%; */
   max-width: 505.031px;
   min-height: 622.672px;
-  background-color: rgb(204, 204, 204);
+  /* max-height: 100%; */
+  background-color: rgb(255, 255, 255);
 }
-
-.combox .site .site_bg {
+/* ---- */
+.combox .gallery .site .site_bg {
   width: 90%;
   aspect-ratio: 5.7/4;
   margin: 30px auto;
   border-radius: 20px;
 }
-
 .combox .site .site_bg a {
   display: block;
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
 .combox .site .site_bg:hover a {
   background-color: #dbfe04;
   opacity: 0.5;
 }
-
 .indibox .site1 .site_bg {
   background: url(./images/grangand.png) no-repeat 50% / cover;
 }
-
-.combox .site .site_txt {
+/* ---- */
+.combox .gallery .site .site_txt {
   font-family: Pretendard Variable;
   width: 90%;
   margin: 0 auto;
 }
-
-.combox .site .site_txt h3 {
+.combox .gallery .site .site_txt h3 {
   font-size: calc(1.5rem + 1vw);
   margin: 5% 0;
   font-weight: 600;
 }
-
-.combox .site .site_txt p {
+.combox .gallery .site .site_txt p {
   margin: 15px 0;
   font-weight: 500;
 }
+
 /* -------skills------- */
 
 .skills_container .skills_bg {
