@@ -1,7 +1,7 @@
 @charset 'utf-8';
 /* 부드러운 스크롤 */
 html {
-  min-width: 1060px;
+  /* min-width: 1060px; */
   scroll-behavior: smooth;
 }
 body {
@@ -9,7 +9,7 @@ body {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Malgun Gothic",
     "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 
-  /* Pretendard Variable" */
+  /* 'Pretendard Variable' */
 }
 
 .flex {
@@ -20,10 +20,6 @@ body {
 .w87 {
   width: 87%;
   margin: 0 auto;
-}
-
-.grid {
-  display: grid;
 }
 
 .title_All {
@@ -91,7 +87,7 @@ header {
   border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 9999;
   width: 100%;
   padding: 10px;
   background: #fff;
@@ -132,10 +128,12 @@ header {
 }
 
 .mian_container .mian_wrapr {
-  padding: calc(7vh + 4vw) 0;
+  padding: calc(10vw + 4vw) 0;
+  align-items: center;
 }
 
 .mian_container .mian_wrapr .main_txt {
+  font-size: 2rem;
 }
 
 .mian_container .mian_wrapr .main_ani {
@@ -159,6 +157,8 @@ header {
   position: relative;
   font-weight: 400;
   font-size: calc(1vw + 15px);
+
+  animation: move1 2s infinite;
 }
 .mian_container .main_go .go_txt span:first-child {
   position: absolute;
@@ -178,18 +178,16 @@ header {
 }
 .mian_container .main_go .go_txt span svg {
   width: 10%;
-  animation: move1 2s infinite;
+  transform: rotate(135deg);
 }
 
 @keyframes move1 {
-  0% {
-    transform: translateY(0%) rotate(135deg);
+  0%,
+  100% {
+    transform: translateY(0%);
   }
   50% {
-    transform: translateY(50%) rotate(135deg);
-  }
-  100% {
-    transform: translateY(25%) rotate(135deg);
+    transform: translateY(15%);
   }
 }
 /* -------projects------- */
@@ -202,7 +200,7 @@ header {
   gap: 1.5vw;
 }
 .projects_container .projects_go .intogo a {
-  font-family: Pretendard Variable;
+  font-family: "Pretendard Variable";
   font-weight: 500;
   font-size: calc(5px + 1vw);
   display: block;
@@ -223,16 +221,26 @@ header {
 /* ------------바로가기------------ */
 .combox {
 }
-/* .indibox {} */
+.indibox {
+  position: relative;
+}
+.teambox {
+  position: relative;
+}
 .combox .btn_group {
-  width: 96%;
-  margin: 0 auto;
+  width: 93%;
   align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
 }
 .combox .btn_group .prevBtn,
 .combox .btn_group .nexBtn {
   width: 60px;
   height: 60px;
+  cursor: pointer;
 }
 .combox .btn_group .prevBtn i,
 .combox .btn_group .nexBtn i {
@@ -242,24 +250,27 @@ header {
   border-top: 2px #000 solid;
   border-left: 2px #000 solid;
 }
-.combox .btn_group .prevBtn i {
+.combox .btn_group .prevBtn {
   transform: rotate(-45deg);
 }
-.combox .btn_group .nexBtn i {
+.combox .btn_group .nexBtn {
   transform: rotate(135deg);
 }
+/* ------ */
 .combox .slide {
-  width: 87%;
-  min-width: 1100px;
+  /* max-width: 1100px; */
+  width: 100%;
   min-height: 622.672px;
   margin: 0 auto;
   overflow: hidden;
   padding: 30px 0;
-  background-color: rgb(195, 214, 255);
+  /* background-color: #00aeff; */
 }
 .combox .gallery {
   display: flex;
-  width: 200%;
+  width: calc(200% - 15vw);
+  margin-left: 5vw;
+  gap: 5vw;
 }
 .combox .gallery li {
   width: 50%;
@@ -271,9 +282,9 @@ header {
   margin: 0 auto;
   /* min-width: 100%; */
   max-width: 505.031px;
-  min-height: 622.672px;
-  /* max-height: 100%; */
-  background-color: rgb(255, 255, 255);
+  /* min-height: 622.672px; */
+  max-height: 622.672px;
+  background-color: #eee;
 }
 /* ---- */
 .combox .gallery .site .site_bg {
@@ -281,6 +292,7 @@ header {
   aspect-ratio: 5.7/4;
   margin: 30px auto;
   border-radius: 20px;
+  position: relative;
 }
 .combox .site .site_bg a {
   display: block;
@@ -288,16 +300,23 @@ header {
   height: 100%;
   border-radius: 20px;
 }
-.combox .site .site_bg:hover a {
+.site .site_bg:hover a {
+  background-color: rgba(251, 255, 0, 0.5);
+}
+.combox .siteok .site_bg:hover a {
   background-color: #dbfe04;
   opacity: 0.5;
 }
 .indibox .site1 .site_bg {
   background: url(./images/grangand.png) no-repeat 50% / cover;
 }
+.site .site_bg {
+  background: #fff url(./images/dino.gif) no-repeat 85% 80% / 20%;
+}
+
 /* ---- */
 .combox .gallery .site .site_txt {
-  font-family: Pretendard Variable;
+  font-family: "Pretendard Variable";
   width: 90%;
   margin: 0 auto;
 }
@@ -309,6 +328,47 @@ header {
 .combox .gallery .site .site_txt p {
   margin: 15px 0;
   font-weight: 500;
+}
+/* -----------타이핑 */
+.text {
+  font-family: "NeoDunggeunmoPro";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 2rem;
+  margin-left: 0.6rem;
+}
+
+.text::after {
+  content: "";
+  margin-left: 0.4rem;
+  border-right: 2px solid #777;
+  animation: cursor 1s infinite steps(2);
+}
+
+@keyframes cursor {
+  from {
+    border-right: 2px solid #222;
+  }
+  to {
+    border-right: 2px solid #777;
+  }
+}
+/* ----- */
+.text2 {
+  font-family: "NeoDunggeunmoPro";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 2rem;
+  margin-left: 0.6rem;
+}
+
+.text2::after {
+  content: "";
+  margin-left: 0.4rem;
+  border-right: 2px solid #777;
+  animation: cursor 1s infinite steps(2);
 }
 
 /* -------skills------- */
@@ -324,6 +384,7 @@ header {
   padding: calc(200px + 1vw) 0;
 }
 .skills_container .skills_mibox {
+  height: 165px;
   border-bottom: 1px solid #000;
 }
 .skills_container .skills_mibox svg {
@@ -337,7 +398,7 @@ header {
 }
 .skills_container .skills_mibox h2:before {
   content: "";
-  font-family: Pretendard Variable;
+  font-family: "Pretendard Variable";
   font-size: 15px;
   text-align: center;
   display: block;
@@ -383,6 +444,8 @@ header {
   display: block;
   font-size: 1.2rem;
 }
+
+/* ------하단 이모지------ */
 .skills_container .imz {
   width: 15%;
   align-content: center;
@@ -398,30 +461,57 @@ header {
 }
 /* ------- About Me------- */
 
-.about_container .about_wrapr {
+.about_wrapr {
   background: linear-gradient(#ddfe0400, #ddfe047e, #ddfe04dc);
   padding: calc(70px + 1vw) 0 0;
 }
-.about_container .about_wrapr .about .flex {
+.about_wrapr .about .flex {
   align-items: center;
   gap: 30px;
 }
-.about_container .about_wrapr .about .me_img {
-  width: 32%;
+.about_wrapr .about .Profil {
+  font-size: 1.5rem;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template: 60% 40%/1fr 1fr;
+  margin: 7vw 0;
+}
+.about_wrapr .about .Profil .me_text {
+  /* grid-row: 2 / span 2; */
+  grid-column: 1;
+}
+.about_wrapr .about .me_img {
+  width: 500px;
   min-width: 265px;
   aspect-ratio: 1;
   border-radius: 50%;
   background: url(./images/me.jpg) no-repeat 50% / cover;
 }
-.about_container .about_wrapr .about .flex ul {
-  font-family: Pretendard Variable;
+
+.about_wrapr .about .flex ul {
+  font-family: "Pretendard Variable";
   font-size: calc(1rem + 0.5vw);
   line-height: 2;
   list-style: circle;
 }
-.about_container .about_wrapr .contact {
+.about_wrapr .contact {
   width: 30%;
   padding-bottom: 30px;
+}
+/* --------------- */
+.text3 {
+  font-family: "NeoDunggeunmoPro";
+  font-size: 2rem;
+  margin-top: 7vw;
+}
+
+.text3::after {
+  content: "";
+  margin-left: 0.4rem;
+  border-right: 2px solid #777;
+  animation: cursor 1s infinite steps(2);
 }
 
 .contact li {
