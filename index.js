@@ -1,3 +1,8 @@
+$(".toptxt").on("click", () => {
+  window.scrollTo({ top: 0 });
+});
+
+// .toptxt
 /* -------헤더------ */
 let prescroll = window.scrollY;
 console.log(prescroll);

@@ -95,7 +95,9 @@ header {
 .nav_bar {
   padding: 20px 0;
 }
-
+.toptxt {
+  cursor: pointer;
+}
 .toptxt a {
   display: block;
   width: 100px;
@@ -268,9 +270,9 @@ header {
 }
 .combox .gallery {
   display: flex;
-  width: calc(200% - 15vw);
-  margin-left: 5vw;
-  gap: 5vw;
+  width: calc(200% - 7.5vw);
+  margin-left: 2.5vw;
+  gap: 2.5vw;
 }
 .combox .gallery li {
   width: 50%;
@@ -303,11 +305,16 @@ header {
 .site .site_bg:hover a {
   background-color: rgba(251, 255, 0, 0.5);
 }
+/* ------사이트 이지 추가하기+배경색 */
+
 .combox .siteok .site_bg:hover a {
   background-color: #dbfe04;
   opacity: 0.5;
 }
 .indibox .site1 .site_bg {
+  background: url(./images/sofurn.png) no-repeat 50% / cover;
+}
+.indibox .site2 .site_bg {
   background: url(./images/grangand.png) no-repeat 50% / cover;
 }
 .site .site_bg {
@@ -535,12 +542,12 @@ header {
 
 .contact li .git {
   background: url(./images/sns.png) no-repeat;
-  background-position: left 50%;
+  background-position: left bottom;
 }
 
 .contact li .talk {
   background: url(./images/sns.png) no-repeat;
-  background-position: left bottom;
+  background-position: left 50%;
 }
 
 .contact li i {
@@ -569,11 +576,11 @@ header {
 }
 
 .contact li:hover .git {
-  background-position: right 50%;
+  background-position: right bottom;
 }
 
 .contact li .talk:hover {
-  background-position: right bottom;
+  background-position: right 50%;
 }
 
 .about_container footer {
