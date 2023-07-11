@@ -305,7 +305,7 @@ header {
 .site .site_bg:hover a {
   background-color: rgba(251, 255, 0, 0.5);
 }
-/* ------사이트 이지 추가하기+배경색 */
+/* ------사이트 페이지 추가하기+배경색 */
 
 .combox .siteok .site_bg:hover a {
   background-color: #dbfe04;
@@ -318,6 +318,9 @@ header {
   background: url(./images/grangand.png) no-repeat 50% / cover;
 }
 .site .site_bg {
+  background: #fff;
+}
+.site4 .site_bg {
   background: #fff url(./images/dino.gif) no-repeat 85% 80% / 20%;
 }
 
