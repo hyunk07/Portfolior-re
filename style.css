@@ -591,35 +591,17 @@ header {
 /* -------skills------- */
 
 .skills_container .skills_bg {
-  background: linear-gradient(
-    #ddfe0400,
-    #ddfe047e,
-    #ddfe04dc,
-    #ddfe047e,
-    #ddfe0400
-  );
+  background: linear-gradient(#ddfe0400, #ddfe047e, #ddfe04dc, #ddfe0400);
   padding: calc(200px + 1vw) 0;
 }
 .skills_container .skills_mibox {
-  height: 165px;
+  height: 200px;
   border-bottom: 1px solid #000;
 }
 .skills_container .skills_mibox svg {
   width: 20px;
 }
-.skills_container .skills_mibox h2 {
-  font-size: calc(3rem + 1vw);
-  text-align: center;
-  font-weight: 500;
-  margin: 20px 0 40px;
-  position: relative;
-  transition: 1s;
-}
-.skills_container .skills_mibox ul {
-  display: none;
-  transform: translateX(0);
-  transition: 1s;
-}
+
 .skills_container .skills_mibox h2:before {
   content: "";
   font-family: "Pretendard Variable";
@@ -648,21 +630,24 @@ header {
 .skills_container .skills_mibox:nth-child(5) h2:before {
   content: "05+";
 }
-/* 마우스 올리기 */
-.skills_container .skills_mibox:hover .skills_txt {
+/* 마우스 올리기==>취소, 수정 하기 */
+.skills_container .skills_mibox .skills_txt {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   /* gap: 15vw; */
 }
-.skills_container .skills_mibox:hover h2 {
+.skills_container .skills_mibox h2 {
+  font-weight: 500;
+  position: relative;
   font-size: 3rem;
 }
-.skills_container .skills_mibox:hover ul {
+.skills_container .skills_mibox ul {
   display: block;
   font-size: 1.1rem;
   transition: 0.5s;
   transform: translateX(50px);
+  line-height: calc(1vw + 1.1rem);
 }
 /* 
 
@@ -711,11 +696,11 @@ header {
   background: url(./images/me.jpg) no-repeat 50% / cover;
 }
 
-.about_wrapr .about .flex ul {
+.about_wrapr .about ul {
   font-family: "Pretendard Variable";
   font-size: calc(1rem + 0.5vw);
   line-height: 2;
-  list-style: circle;
+  list-style: disc;
 }
 .about_wrapr .contact {
   width: 30%;
@@ -734,11 +719,14 @@ header {
   border-right: 2px solid #777;
   animation: cursor 1s infinite steps(2);
 }
-
+.contact .flex {
+  justify-content: space-around;
+}
 .contact li {
   width: 70px;
   height: 70px;
   margin: 20px 0;
+  text-align: center;
 }
 
 .contact li a {
@@ -753,12 +741,6 @@ header {
   background: url(./images/sns.png) no-repeat;
   background-position: left top;
 }
-
-.contact li .git {
-  background: url(./images/sns.png) no-repeat;
-  background-position: left bottom;
-}
-
 .contact li .talk {
   background: url(./images/sns.png) no-repeat;
   background-position: left 50%;
@@ -787,10 +769,6 @@ header {
 
 .contact li .mali:hover {
   background-position: right top;
-}
-
-.contact li:hover .git {
-  background-position: right bottom;
 }
 
 .contact li .talk:hover {
