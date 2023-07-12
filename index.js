@@ -1,3 +1,9 @@
+// a 기본값 삭제
+$('a[href="#"]').on("click", (e) => {
+  e.preventDefault();
+});
+
+// 
 $(".toptxt").on("click", () => {
   window.scrollTo({ top: 0 });
 });

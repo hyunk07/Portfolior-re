@@ -16,7 +16,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
+.grid {
+  display: grid;
+}
 .w87 {
   width: 87%;
   margin: 0 auto;
@@ -127,6 +129,11 @@ header {
 
 /* -------main------- */
 .mian_container {
+  height: 100vh;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .mian_container .mian_wrapr {
@@ -134,12 +141,208 @@ header {
   align-items: center;
 }
 
-.mian_container .mian_wrapr .main_txt {
-  font-size: 2rem;
+/* --------------- */
+
+@keyframes can {
+  0% {
+    transform: translateY(0);
+  }
+  26.6666666667% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  33.3333333333% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  33.3343333333% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  33.3363333333% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  93.3333333333% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes will {
+  0% {
+    transform: translateY(0);
+  }
+  26.6666666667% {
+    transform: translateY(0);
+  }
+  33.3333333333% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  66.6666666667% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  66.6676666667% {
+    transform: translateY(0);
+  }
+  66.6696666667% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes thrive {
+  0% {
+    transform: translateY(-300%);
+  }
+  0.0001% {
+    transform: translateY(0);
+  }
+  26.6666666667% {
+    transform: translateY(0);
+  }
+  33.3333333333% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(-100%);
+  }
+  66.6666666667% {
+    transform: translateY(-200%);
+  }
+  93.3333333333% {
+    transform: translateY(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300%);
+    opacity: 0;
+  }
+}
+.main_txt {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 6vw;
+  line-height: 6vw;
+  letter-spacing: 3px;
 }
 
+.word {
+  display: flex;
+  grid-column: 2;
+  grid-row: auto;
+}
+.word span {
+  display: inline-block;
+}
+
+.can span:nth-child(1) {
+  animation: can 10s ease-in-out both 0.05s infinite;
+}
+
+.will span:nth-child(1) {
+  animation: will 10s ease-in-out both 0.05s infinite;
+}
+
+.thrive span:nth-child(1) {
+  animation: thrive 10s ease-in-out both 0.05s infinite;
+}
+
+.can span:nth-child(2) {
+  animation: can 10s ease-in-out both 0.1s infinite;
+}
+
+.will span:nth-child(2) {
+  animation: will 10s ease-in-out both 0.1s infinite;
+}
+
+.thrive span:nth-child(2) {
+  animation: thrive 10s ease-in-out both 0.1s infinite;
+}
+
+.can span:nth-child(3) {
+  animation: can 10s ease-in-out both 0.15s infinite;
+}
+
+.will span:nth-child(3) {
+  animation: will 10s ease-in-out both 0.15s infinite;
+}
+
+.thrive span:nth-child(3) {
+  animation: thrive 10s ease-in-out both 0.15s infinite;
+}
+
+.can span:nth-child(4) {
+  animation: can 10s ease-in-out both 0.2s infinite;
+}
+
+.will span:nth-child(4) {
+  animation: will 10s ease-in-out both 0.2s infinite;
+}
+
+.thrive span:nth-child(4) {
+  animation: thrive 10s ease-in-out both 0.2s infinite;
+}
+
+.can span:nth-child(5) {
+  animation: can 10s ease-in-out both 0.25s infinite;
+}
+
+.will span:nth-child(5) {
+  animation: will 10s ease-in-out both 0.25s infinite;
+}
+
+.thrive span:nth-child(5) {
+  animation: thrive 10s ease-in-out both 0.25s infinite;
+}
+
+.can span:nth-child(6) {
+  animation: can 10s ease-in-out both 0.3s infinite;
+}
+
+.will span:nth-child(6) {
+  animation: will 10s ease-in-out both 0.3s infinite;
+}
+
+.thrive span:nth-child(6) {
+  animation: thrive 10s ease-in-out both 0.3s infinite;
+}
+
+.title {
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, max-content);
+  overflow: hidden;
+  max-height: 5.9vw;
+  margin: 40px 0;
+}
+
+/* For styling the demo. Not required. */
+
+/* .title {
+  color: #ffd166;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 6vw;
+  line-height: 6vw;
+  letter-spacing: 3px;
+} */
+/* --------------- */
 .mian_container .mian_wrapr .main_ani {
-  width: 25%;
+  width: 20%;
   aspect-ratio: 1;
   background: url(./images/main_ain.png) no-repeat 50% / cover;
   animation: spin infinite linear 10s;
@@ -152,7 +355,7 @@ header {
 }
 
 .mian_container .main_go svg {
-  width: 100%;
+  /* width: 90%; */
 }
 .mian_container .main_go {
   display: block;
@@ -311,6 +514,7 @@ header {
   background-color: #dbfe04;
   opacity: 0.5;
 }
+/* 개인 */
 .indibox .site1 .site_bg {
   background: url(./images/sofurn.png) no-repeat 50% / cover;
 }
@@ -323,7 +527,10 @@ header {
 .site4 .site_bg {
   background: #fff url(./images/dino.gif) no-repeat 85% 80% / 20%;
 }
-
+/* 팀 */
+.teambox .site2 .site_bg {
+  background: url(./images/urbanic30.png) no-repeat 50% / cover;
+}
 /* ---- */
 .combox .gallery .site .site_txt {
   font-family: "Pretendard Variable";
@@ -402,9 +609,16 @@ header {
 }
 .skills_container .skills_mibox h2 {
   font-size: calc(3rem + 1vw);
+  text-align: center;
   font-weight: 500;
   margin: 20px 0 40px;
   position: relative;
+  transition: 1s;
+}
+.skills_container .skills_mibox ul {
+  display: none;
+  transform: translateX(0);
+  transition: 1s;
 }
 .skills_container .skills_mibox h2:before {
   content: "";
@@ -434,26 +648,23 @@ header {
 .skills_container .skills_mibox:nth-child(5) h2:before {
   content: "05+";
 }
-/* 내용넣기 */
-.skills_container .skills_mibox .skills_txt {
+/* 마우스 올리기 */
+.skills_container .skills_mibox:hover .skills_txt {
   align-items: center;
-  /* width: 80%; */
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  /* gap: 15vw; */
 }
-.skills_container .skills_mibox .skills_txt ul {
-  display: none;
+.skills_container .skills_mibox:hover h2 {
+  font-size: 3rem;
 }
-.skills_container .skills_mibox .skills_txt:hover {
-  width: 80%;
-}
-.skills_container .skills_mibox .skills_txt:hover h2 {
-  width: 80%;
-  font-size: 1.5rem;
-}
-.skills_container .skills_mibox .skills_txt:hover ul {
-  width: 70%;
+.skills_container .skills_mibox:hover ul {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  transition: 0.5s;
+  transform: translateX(50px);
 }
+/* 
 
 /* ------하단 이모지------ */
 .skills_container .imz {
