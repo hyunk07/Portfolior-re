@@ -93,6 +93,7 @@ header {
   width: 100%;
   padding: 10px;
   background: #fff;
+  transition: 0.5s;
 }
 .nav_bar {
   padding: 20px 0;
@@ -137,6 +138,8 @@ header {
 }
 
 .mian_container .mian_wrapr {
+  width: 90%;
+  margin: 0 auto;
   padding: calc(5.5vw + 4vw) 0;
   align-items: center;
 }
@@ -236,8 +239,8 @@ header {
 
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 6vw;
-  line-height: 6vw;
+  font-size: 4.5vw;
+  line-height: 4.5vw;
   letter-spacing: 3px;
 }
 
@@ -321,12 +324,23 @@ header {
 .thrive span:nth-child(6) {
   animation: thrive 10s ease-in-out both 0.3s infinite;
 }
+.can span:nth-child(7) {
+  animation: can 10s ease-in-out both 0.35s infinite;
+}
+
+.will span:nth-child(7) {
+  animation: will 10s ease-in-out both 0.35s infinite;
+}
+
+.thrive span:nth-child(7) {
+  animation: thrive 10s ease-in-out both 0.35s infinite;
+}
 
 .title {
   grid-template-columns: auto;
   grid-template-rows: repeat(3, max-content);
   overflow: hidden;
-  max-height: 5.9vw;
+  max-height: 4.4vw;
   margin: 40px 0;
 }
 
@@ -490,6 +504,7 @@ header {
   /* min-height: 622.672px; */
   max-height: 622.672px;
   background-color: #eee;
+  /* background-color: #f0ffb8; */
 }
 /* ---- */
 .combox .gallery .site .site_bg {
@@ -506,7 +521,7 @@ header {
   border-radius: 20px;
 }
 .site .site_bg:hover a {
-  background-color: rgba(251, 255, 0, 0.5);
+  /* background-color: rgba(251, 255, 0, 0.5); */
 }
 /* ------사이트 페이지 추가하기+배경색 */
 
@@ -528,6 +543,9 @@ header {
   background: #fff url(./images/dino.gif) no-repeat 85% 80% / 20%;
 }
 /* 팀 */
+.teambox .site1 .site_bg {
+  background: url(./images/UIUX.png) no-repeat 50% / cover;
+}
 .teambox .site2 .site_bg {
   background: url(./images/urbanic30.png) no-repeat 50% / cover;
 }
@@ -638,7 +656,7 @@ header {
   /* gap: 15vw; */
 }
 .skills_container .skills_mibox h2 {
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
   font-size: 3rem;
 }
@@ -648,6 +666,8 @@ header {
   transition: 0.5s;
   transform: translateX(50px);
   line-height: calc(1vw + 1.1rem);
+  font-weight: 500;
+  font-family: "Pretendard Variable";
 }
 /* 
 
@@ -773,6 +793,64 @@ header {
 
 .contact li .talk:hover {
   background-position: right 50%;
+}
+/* footer */
+footer .flex {
+  justify-content: space-around;
+  align-items: end;
+  width: 40%;
+  margin: 50px auto;
+}
+footer li {
+  width: 70px;
+  height: 70px;
+  margin: 20px 0;
+  text-align: center;
+}
+footer li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999pc;
+}
+
+footer li .Home {
+  background: url(./images/sns.png) no-repeat;
+  background-position: left bottom;
+}
+footer li .Assignment {
+  background: url(./images/sns.png) no-repeat;
+  background-position: left bottom;
+}
+
+footer li i {
+  border-radius: 20px;
+  background-color: #000;
+  overflow: hidden;
+  position: absolute;
+  left: 15px;
+  opacity: 0;
+}
+
+footer li:hover a i {
+  display: block;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  z-index: -9;
+
+  transition-duration: 0.2s;
+}
+
+footer li .Home:hover {
+  background-position: right bottom;
+}
+
+footer li .Assignment:hover {
+  background-position: right bottom;
 }
 
 .about_container footer {
